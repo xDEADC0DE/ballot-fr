@@ -30,7 +30,7 @@ function Candidate(config){
 // CONSTANTS: the GRAPHICS!
 // id => img & fill
 Candidate.graphics = {
-	square: {
+	carré: {
 		img: "img/square.png",
 		fill: "hsl(240,80%,70%)"
 	},

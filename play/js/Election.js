@@ -24,7 +24,7 @@ Election.score = function(model, options){
 	// NO WINNER?! OR TIE?!?!
 	if(!winner){
 
-		var text = "<b>NOBODY WINS</b>";
+		var text = "<b>PERSONNE NE GAGNE</b>";
 		model.caption.innerHTML = text;
 
 	}else{
@@ -41,7 +41,7 @@ Election.score = function(model, options){
 		text += _icon(winner)+" has the highest score, so...<br>";
 		text += "</span>";
 		text += "<br>";
-		text += "<b style='color:"+color+"'>"+winner.toUpperCase()+"</b> WINS";
+		text += "<b style='color:"+color+"'>"+winner.toUpperCase()+"</b> GAGNE";
 		model.caption.innerHTML = text;
 
 	}
@@ -61,7 +61,7 @@ Election.approval = function(model, options){
 	// NO WINNER?! OR TIE?!?!
 	if(!winner){
 
-		var text = "<b>NOBODY WINS</b>";
+		var text = "<b>PERSONNE NE GAGNE</b>";
 		model.caption.innerHTML = text;
 
 	}else{
@@ -179,7 +179,7 @@ Election.borda = function(model, options){
 	// NO WINNER?! OR TIE?!?!
 	if(!winner){
 
-		var text = "<b>NOBODY WINS</b>";
+		var text = "<b>PERSONNE NE GAGNE</b>";
 		model.caption.innerHTML = text;
 
 	}else{
@@ -301,7 +301,7 @@ Election.plurality = function(model, options){
 		if(options.sidebar){
 			text += _icon(c)+" got "+tally[c]+" votes<br>";
 		}else{
-			text += c+": "+tally[c];
+			text += c+" : "+tally[c];
 			if(options.verbose) text+=" votes";
 			if(i<model.candidates.length-1) text+=", ";
 		}
@@ -312,7 +312,7 @@ Election.plurality = function(model, options){
 	}
 	text += "</span>";
 	text += "<br>";
-	text += "<b style='color:"+color+"'>"+winner.toUpperCase()+"</b> WINS";
+	text += "<b style='color:"+color+"'>"+winner.toUpperCase()+"</b> GAGNE";
 	model.caption.innerHTML = text;
 
 };
