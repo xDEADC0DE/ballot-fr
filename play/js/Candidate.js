@@ -38,7 +38,7 @@ Candidate.graphics = {
 		img: "img/triangle.png",
 		fill: "hsl(45,80%,70%)"
 	},
-	hexagon: {
+	hexagone: {
 		img: "img/hexagon.png",
 		fill: "hsl(0,80%,70%)"
 	},
