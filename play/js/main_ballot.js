@@ -19,9 +19,9 @@ function main(ballotType){
 				type: VoterType,
 				x:81, y:92
 			});
-			model.addCandidate("square", 41, 50);
+			model.addCandidate("carré", 41, 50);
 			model.addCandidate("triangle", 153, 95);
-			model.addCandidate("hexagon", 216, 216);
+			model.addCandidate("hexagone", 216, 216);
 		};
 
 		// CREATE A BALLOT

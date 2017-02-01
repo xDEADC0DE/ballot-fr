@@ -15,9 +15,9 @@ function ScoreBallot(config){
 
 	// BOXES!
 	self.boxes = {
-		square: self.createRate(133, 100, 0),
+		carré: self.createRate(133, 100, 0),
 		triangle: self.createRate(133, 143, 3),
-		hexagon: self.createRate(133, 184, 1)
+		hexagone: self.createRate(133, 184, 1)
 	};
 
 	// On update...
@@ -39,9 +39,9 @@ function ApprovalBallot(config){
 
 	// BOXES!
 	self.boxes = {
-		square: self.createBox(26, 98, 0),
+		carré: self.createBox(26, 98, 0),
 		triangle: self.createBox(26, 140, 1),
-		hexagon: self.createBox(26, 184, 0)
+		hexagone: self.createBox(26, 184, 0)
 	};
 
 	// On update...
@@ -72,9 +72,9 @@ function RankedBallot(config){
 
 	// BOXES!
 	self.boxes = {
-		square: self.createBox(26, 98, 0),
+		carré: self.createBox(26, 98, 0),
 		triangle: self.createBox(26, 140, 1),
-		hexagon: self.createBox(26, 184, 0)
+		hexagone: self.createBox(26, 184, 0)
 	};
 
 	// On update...
@@ -97,9 +97,9 @@ function PluralityBallot(config){
 
 	// BOXES!
 	self.boxes = {
-		square: self.createBox(26, 98, 0),
+		carré: self.createBox(26, 98, 0),
 		triangle: self.createBox(26, 140, 1),
-		hexagon: self.createBox(26, 184, 0)
+		hexagone: self.createBox(26, 184, 0)
 	};
 
 	// On update...

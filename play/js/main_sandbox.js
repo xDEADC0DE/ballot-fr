@@ -95,7 +95,7 @@ function main(config){
 			}
 
 			// Candidates, in a circle around the center.
-			var _candidateIDs = ["square","triangle","hexagon","pentagon","bob"];
+			var _candidateIDs = ["carré","triangle","hexagone","pentagone","bob"];
 			var angle = 0;
 			var num = model.numOfCandidates;
 			switch(num){

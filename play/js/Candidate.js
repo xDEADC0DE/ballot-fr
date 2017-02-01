@@ -42,7 +42,7 @@ Candidate.graphics = {
 		img: "img/hexagon.png",
 		fill: "hsl(0,80%,70%)"
 	},
-	pentagon: {
+	pentagone: {
 		img: "img/pentagon.png",
 		fill: "hsl(90,80%,70%)"
 	},
