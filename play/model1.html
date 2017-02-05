@@ -29,13 +29,13 @@ Loader.onload = function(){
 			type: PluralityVoter,
 			x:125, y:200
 		});
-		model.addCandidate("carré", 50, 125);
+		model.addCandidate("square", 50, 125);
 		model.addCandidate("triangle", 250, 125);
 	};
 	model.onUpdate = function(){
 		var id = model.voters[0].ballot.vote;
 		var color = Candidate.graphics[id].fill;
-		var text = "VOTE POUR <b style='color:"+color+"'>"+id.toUpperCase()+"</b>";
+		var text = "VOTE POUR <b style='color:"+color+"'>"+_translation(id).toUpperCase()+"</b>";
 		model.caption.innerHTML = text;
 	};
 

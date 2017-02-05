@@ -30,7 +30,7 @@ function Candidate(config){
 // CONSTANTS: the GRAPHICS!
 // id => img & fill
 Candidate.graphics = {
-	carré: {
+	square: {
 		img: "img/square.png",
 		fill: "hsl(240,80%,70%)"
 	},
@@ -38,11 +38,11 @@ Candidate.graphics = {
 		img: "img/triangle.png",
 		fill: "hsl(45,80%,70%)"
 	},
-	hexagone: {
+	hexagon: {
 		img: "img/hexagon.png",
 		fill: "hsl(0,80%,70%)"
 	},
-	pentagone: {
+	pentagon: {
 		img: "img/pentagon.png",
 		fill: "hsl(90,80%,70%)"
 	},

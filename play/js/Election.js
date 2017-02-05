@@ -41,7 +41,7 @@ Election.score = function(model, options){
 		text += _icon(winner)+" has the highest score, so...<br>";
 		text += "</span>";
 		text += "<br>";
-		text += "<b style='color:"+color+"'>"+winner.toUpperCase()+"</b> GAGNE";
+		text += "<b style='color:"+color+"'>"+_translation(winner).toUpperCase()+"</b> GAGNE";
 		model.caption.innerHTML = text;
 
 	}
@@ -78,7 +78,7 @@ Election.approval = function(model, options){
 		text += _icon(winner)+" is most approved, so...<br>";
 		text += "</span>";
 		text += "<br>";
-		text += "<b style='color:"+color+"'>"+winner.toUpperCase()+"</b> WINS";
+		text += "<b style='color:"+color+"'>"+_translation(winner).toUpperCase()+"</b> WINS";
 		model.caption.innerHTML = text;
 
 	}
@@ -148,7 +148,7 @@ Election.condorcet = function(model, options){
 		text += _icon(topWinner)+" beats all other candidates in one-on-one races.<br>";
 		text += "</span>";
 		text += "<br>";
-		text += "<b style='color:"+color+"'>"+topWinner.toUpperCase()+"</b> WINS";
+		text += "<b style='color:"+color+"'>"+_translation(topWinner).toUpperCase()+"</b> WINS";
 	}else{
 		model.canvas.style.borderColor = "#000"; // BLACK.
 		text += "NOBODY beats everyone else in one-on-one races.<br>";
@@ -196,7 +196,7 @@ Election.borda = function(model, options){
 		text += _icon(winner)+" has the <i>lowest</i> score, so...<br>";
 		text += "</span>";
 		text += "<br>";
-		text += "<b style='color:"+color+"'>"+winner.toUpperCase()+"</b> WINS";
+		text += "<b style='color:"+color+"'>"+_translation(winner).toUpperCase()+"</b> WINS";
 		model.caption.innerHTML = text;
 
 	}
@@ -273,7 +273,7 @@ Election.irv = function(model, options){
 	var color = _colorWinner(model, finalWinner);
 	text += "</span>";
 	text += "<br>";
-	text += "<b style='color:"+color+"'>"+winner.toUpperCase()+"</b> WINS";
+	text += "<b style='color:"+color+"'>"+_translation(winner).toUpperCase()+"</b> WINS";
 	model.caption.innerHTML = text;
 
 
@@ -301,7 +301,7 @@ Election.plurality = function(model, options){
 		if(options.sidebar){
 			text += _icon(c)+" got "+tally[c]+" votes<br>";
 		}else{
-			text += c+" : "+tally[c];
+			text += _translation(c) +" : "+tally[c];
 			if(options.verbose) text+=" votes";
 			if(i<model.candidates.length-1) text+=", ";
 		}
@@ -312,7 +312,7 @@ Election.plurality = function(model, options){
 	}
 	text += "</span>";
 	text += "<br>";
-	text += "<b style='color:"+color+"'>"+winner.toUpperCase()+"</b> GAGNE";
+	text += "<b style='color:"+color+"'>"+_translation(winner).toUpperCase()+"</b> GAGNE";
 	model.caption.innerHTML = text;
 
 };
