@@ -35,7 +35,7 @@ Election.score = function(model, options){
 		text += "<b>highest average score wins</b><br>";
 		for(var i=0; i<model.candidates.length; i++){
 			var c = model.candidates[i].id;
-			text += "score de " _icon(c)+"&nbsp;: "+(tally[c].toFixed(2))+" sur 5.00<br>";
+			text += "score de "+_icon(c)+"&nbsp;: "+(tally[c].toFixed(2))+" sur 5.00<br>";
 		}
 		text += "<br>";
 		text += _icon(winner)+" a le meilleur score, donc...<br>";
