@@ -32,7 +32,7 @@ Election.score = function(model, options){
 		// Caption
 		var text = "";
 		text += "<span class='small'>";
-		text += "<b>highest average score wins</b><br>";
+		text += "<b>la meilleure moyenne l'emporte</b><br>";
 		for(var i=0; i<model.candidates.length; i++){
 			var c = model.candidates[i].id;
 			text += "score de "+_icon(c)+"&nbsp;: "+(tally[c].toFixed(2))+" sur 5.00<br>";
@@ -89,7 +89,7 @@ Election.condorcet = function(model, options){
 
 	var text = "";
 	text += "<span class='small'>";
-	text += "<b>who wins each one-on-one?</b><br>";
+	text += "<b>Qui gagne chaque duel?</b><br>";
 
 	var ballots = model.getBallots();
 
@@ -187,7 +187,7 @@ Election.borda = function(model, options){
 		// Caption
 		var text = "";
 		text += "<span class='small'>";
-		text += "<b>le plus petit score est le meilleur</b><br>";
+		text += "<b>le plus petit score l'emporte</b><br>";
 		for(var i=0; i<model.candidates.length; i++){
 			var c = model.candidates[i].id;
 			text += "score total de " + _icon(c)+"&nbsp;: "+tally[c]+"<br>";
@@ -218,8 +218,7 @@ Election.irv = function(model, options){
 
 	while(!finalWinner){
 
-		text += "<b>round "+roundNum+":</b><br>";
-		text += "who's voters' #1 choice?<br>";
+		text += "<b>round "+roundNum+"&nbsp;:</b><br>";
 
 		// Tally the approvals & get winner!
 		var pre_tally = _tally(model, function(tally, ballot){
@@ -237,7 +236,7 @@ Election.irv = function(model, options){
 		// Say 'em...
 		for(var i=0; i<candidates.length; i++){
 			var c = candidates[i];
-			text += _icon(c)+":"+tally[c];
+			text += _icon(c)+"&nbsp;: "+tally[c];
 			if(i<candidates.length-1) text+=", ";
 		}
 		text += "<br>";
@@ -253,8 +252,8 @@ Election.irv = function(model, options){
 
 		// Otherwise... runoff...
 		var loser = _countLoser(tally);
-		text += "nobody's more than 50&nbsp;%. ";
-		text += "eliminate loser, "+_icon(loser)+". next round!<br><br>";
+		text += "personne n'a plus de 50&nbsp;%. ";
+		text += "on retire le perdant, "+_icon(loser)+".<br>round suivant&nbsp;!<br><br>";
 
 		// ACTUALLY ELIMINATE
 		candidates.splice(candidates.indexOf(loser), 1); // remove from candidates...
@@ -299,7 +298,7 @@ Election.plurality = function(model, options){
 	for(var i=0; i<model.candidates.length; i++){
 		var c = model.candidates[i].id;
 		if(options.sidebar){
-			text += _icon(c)+" got "+tally[c]+" votes<br>";
+			text += _icon(c)+" obtient "+tally[c]+" voix<br>";
 		}else{
 			text += _translation(c) +" : "+tally[c];
 			if(options.verbose) text+=" votes";

@@ -179,7 +179,7 @@ function main(config){
 
 		};
 		window.chooseSystem = new ButtonGroup({
-			label: "what voting system?",
+			label: "quel type de scrutin ?",
 			width: 108,
 			data: votingSystems,
 			onChoose: onChooseSystem
@@ -190,9 +190,9 @@ function main(config){
 		if(initialConfig.features>=2){ // CANDIDATES as feature.
 
 			var voters = [
-				{name:"one", num:1, margin:5},
-				{name:"two", num:2, margin:5},
-				{name:"three", num:3},
+				{name:"un", num:1, margin:5},
+				{name:"deux", num:2, margin:5},
+				{name:"trois", num:3},
 			];
 			var onChooseVoters = function(data){
 
@@ -209,7 +209,7 @@ function main(config){
 
 			};
 			window.chooseVoters = new ButtonGroup({
-				label: "how many groups of voters?",
+				label: "combien de groupes d'électeurs ?",
 				width: 70,
 				data: voters,
 				onChoose: onChooseVoters
@@ -222,10 +222,10 @@ function main(config){
 		if(initialConfig.features>=3){ // VOTERS as feature.
 
 			var candidates = [
-				{name:"two", num:2, margin:4},
-				{name:"three", num:3, margin:4},
-				{name:"four", num:4, margin:4},
-				{name:"five", num:5}
+				{name:"deux", num:2, margin:4},
+				{name:"trois", num:3, margin:4},
+				{name:"quatre", num:4, margin:4},
+				{name:"cinq", num:5}
 			];
 			var onChooseCandidates = function(data){
 
@@ -242,7 +242,7 @@ function main(config){
 
 			};
 			window.chooseCandidates = new ButtonGroup({
-				label: "how many candidates?",
+				label: "combien de candidats ?",
 				width: 52,
 				data: candidates,
 				onChoose: onChooseCandidates
@@ -275,7 +275,7 @@ function main(config){
 		// CREATE A RESET BUTTON
 		var resetDOM = document.createElement("div");
 		resetDOM.id = "reset";
-		resetDOM.innerHTML = "reset";
+		resetDOM.innerHTML = "RAZ";
 		resetDOM.style.top = "340px";
 		resetDOM.style.left = "350px";
 		resetDOM.onclick = function(){
@@ -361,7 +361,7 @@ function main(config){
 			// Create a "save" button
 			var saveDOM = document.createElement("div");
 			saveDOM.id = "save";
-			saveDOM.innerHTML = "save:";
+			saveDOM.innerHTML = "enreg. :";
 			saveDOM.style.top = "470px";
 			saveDOM.style.left = "120px";
 			saveDOM.onclick = function(){
@@ -372,7 +372,7 @@ function main(config){
 			// The share link textbox
 			linkText = document.createElement("input");
 			linkText.id = "savelink";
-			linkText.placeholder = "[when you save your model, a link you can copy will show up here]";
+			linkText.placeholder = "[quand vous enregistrez, un lien à partager apparait ici]";
 			linkText.setAttribute("readonly", true);
 			linkText.onclick = function(){
 				linkText.select();
@@ -433,7 +433,7 @@ function main(config){
 		// Put it in the save link box!
 		var link = "http://ncase.me/ballot/sandbox?m="+uri;
 		var savelink = document.getElementById("savelink");
-		savelink.value = "saving...";
+		savelink.value = "sauvegarde...";
 		setTimeout(function(){
 			savelink.value = link;
 		},750);
