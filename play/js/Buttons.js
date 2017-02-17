@@ -82,7 +82,7 @@ function Button(buttonConfig, onChoose){
 	self.dom.style.marginRight = buttonConfig.margin+"px";
 
 	// Click!
-	self.dom.innerHTML = buttonConfig.name;
+	self.dom.innerHTML = buttonConfig.content || buttonConfig.name;
 	self.onClick = function(){
 		onChoose(self, buttonConfig);
 	};
