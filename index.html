@@ -1,19 +1,17 @@
 <!doctype html>
 <html lang="fr">
-<head>
 
+<head>
 	<!-- Meta -->
 	<title>Pour un meilleur mode de scrutin</title>
 	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 	<meta content="utf-8" http-equiv="encoding">
 	<meta charset="utf-8">
 	<link rel="icon" type="image/png" href="favicon.png">
-
 	<!-- Schema.org markup for Google+ -->
 	<meta itemprop="name" content="Pour un meilleur mode de scrutin">
 	<meta itemprop="description" content="un guide interactif des modes de scrutin alternatifs">
 	<meta itemprop="image" content="http://ncase.me/ballot/social/thumbnail.png">
-
 	<!-- Twitter Card data -->
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="@ncasenmare">
@@ -21,549 +19,564 @@
 	<meta name="twitter:description" content="un guide interactif des modes de scrutin alternatifs">
 	<meta name="twitter:creator" content="@ncasenmare">
 	<meta name="twitter:image" content="http://ncase.me/ballot/social/thumbnail.png">
-
 	<!-- Open Graph data -->
 	<meta property="og:title" content="Pour un meilleur mode de scrutin">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="http://ncase.me/ballot/">
 	<meta property="og:image" content="http://ncase.me/ballot/social/thumbnail.png">
 	<meta property="og:description" content="un guide interactif des modes de scrutin alternatifs">
-
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<base target="_blank">
-
 </head>
-<body>
 
-<!-- - - - - - - - - 
+<body>
+	<!-- - - - - - - - - 
 
 SPLASH!
 
 - - - - - - - - - -->
-
-<div id="splash" class="banner">
-	<iframe id="splash_iframe" src="splash/splash.html" width="1500" height="400" scrolling="no"></iframe>
-	<img src="img/logo.png"/>
-</div>
-
-</div>
-
-<div id="content">
-
-<!-- - - - - - - - - 
+	<div id="splash" class="banner">
+		<iframe id="splash_iframe" src="splash/splash.html" width="1500" height="400" scrolling="no"></iframe>
+		<img src="img/logo.png" />
+	</div>
+	</div>
+	<div id="content">
+		<!-- - - - - - - - - 
 
 INTRODUCTION:
 THE SPOILER EFFECT
 
 - - - - - - - - - -->
+		<div class="words">
+			<p>
+				Non, cela ne parle pas de l'élection présidentielle de 2017. Enfin, <em>pas uniquement</em> de ça, en tout cas.
+			</p>
+			<p>
+				Avant tout, je dois vous expliquer un <em>bug</em> étrange de notre système éléctoral. Imaginons deux candidats, Camille Carré <img src="play/img/square.png" alt="Camille Carré" /> et Théo Triangle <img src="play/img/triangle.png" alt="Théo Triangle" />, le long de deux axes politiques (par exemple, «&#8239;droite contre gauche&#8239;» et «&#8239;mondialisation contre protectionnisme&#8239;»). Imaginons aussi un élécteur <img src="play/img/voter.png" /> qui vote pour la ou le candidat le plus proche de ses convictions. À quoi est-ce que ça ressemble&nbsp;?
+			</p>
+		</div>
+		<div class="sim-intro">
+			<p class="caption" style="margin-top:30px">
+				<b><span style="font-size:2.5em;">cliquez &amp; faites glisser</span><br>les candidats et l'électeur:</b>
+			</p>
+			<iframe src="play/model1.html" width="305" height="360" scrolling="no"></iframe>
+		</div>
+		<div class="words">
+			<p>
+				Ce n'est pas simple. Triangle a des arguments pointus, mais Carré a davantage de dimensions&nbsp;! Hélas, au final on ne peut voter que pour une seule personne.
+			</p>
+			<p>
+				Bien sûr, il y d'autres votants dans une élection. Voyons à quoi ressemble le scrutin avec une centaine de votants.
+			</p>
+		</div>
+		<div class="sim-intro">
+			<p class="caption">
+				<b>déplacez les candidats &amp; <span class="underline">les</span> électeurs.<br>(pour les déplacer, faites glisser le <em>centre</em> de la foule)<br>observez comment le résultat de l'élection évolue&nbsp;:</b>
+			</p>
+			<iframe src="play/model2.html" width="320" height="400" scrolling="no"></iframe>
+		</div>
+		<div class="words">
+			<p>
+				Voici maintenant une autre élection. Théo Triangle est <em>déjà</em> devant Camille Carré dans les sondages, quand un 3<sup>e</sup> candidat, Hichem Hexagone <img src="play/img/hexagon.png" alt="Hichem Hexagon" /> se présente (les soutiens d'Hexagone aiment le fait qu'il voit les problèmes sous plus d'angles). Inspiré par son succès, il se place politiquement très proche de Triangle.
+			</p>
+			<p>
+				On pourrait croire que donner aux élécteurs davantage de ce qu'ils aiment donnera un <em>meilleur</em> résultat, ou au moins, pas <em>pire</em>, n'est ce pas&nbsp;? Et bien…
+			</p>
+		</div>
+		<div class="sim-intro">
+			<p class="caption">
+				<b>au départ, <img src="play/img/triangle.png" alt="Théo Triangle"/> gagne contre <img src="play/img/square.png" alt="Camille Carré"/>.<br>
+				glissez <img src="play/img/hexagon.png" alt="Théo Triangle"/> <i>juste en dessous</i> de <img src="play/img/triangle.png" alt="Théo Triangle"/>,<br>
+				et voyez ce qui se passe&nbsp;:</b>
+			</p>
+			<iframe src="play/model3.html" width="320" height="460" scrolling="no"></iframe>
+		</div>
+		<div class="words">
+			<p>
+				Et oui. Camille Carré, la candidate la <em>moins</em> populaire, l'emporte&nbsp;! Quand vous avez deux bons candidats, ils se «&#8239;volent&#8239;» des voix entre eux, ce qui permet à un troisième, moins bon, de gagner.
+			</p>
+			<p>
+				On appelle ça le partage des voix. L'exemple français le plus célèbre est l'élection de 2002, quand de nombreux candidats minoritaires de gauche ont «&#8239;pris&#8239;» des votes à Lionel Jospin, permmettant à Jean-Marie Le Pen de se hisser, contre toute attente, au second tour. Le partage des voix était moins important en 2017 en raison de nombreuses primaires destinées à réduire le nombre de candidat·e·s, mais ses effets pouvaient quand même se sentir.
+			</p>
+			<p>
+				Mais encore une fois, le sujet n'est <em>pas</em> l'élection présidentielle de 2017.
+			</p>
+			<p>
+				<strong>Le but est de construire une démocratie en laquelle les gens ont <em>confiance</em>.</strong>
+			</p>
+			<!-- Exemple inadapté en France
+	<p>
+Malgré tout le brouhaha autour des élections de 2017, de <em>nombreux</em> français n'iront pas voter. Et parmi ceux qui ont voté pour Clinton/Trump, <a href="http://www.nytimes.com/interactive/2016/11/08/us/politics/election-exit-polls.html">20 % ont déclaré ne pas avoir confiance en leur candidat</a>, mais <em>ont quand même voté pour eux</em>. <a href="https://www.theatlantic.com/international/archive/2016/07/trust-institutions-trump-brexit/489554/">Partout dans le monde, la confiance des gens en leur gouvernements</a> - ou la crédibilité des élus - n'a jamais été aussi basse. Ce n'est pas la démocratie Américaine qui est en jeu. C'est <em>toutes les démocraties au monde</em>.
+</p>
 
-<div class="words">
-
-	<p>Non, cela ne parle pas de l'élection présidentielle de 2017. Enfin, <em>pas uniquement</em> de ça, en tout cas.</p>
-
-	<p>Avant tout, je dois vous expliquer un <em>bug</em> étrange de notre système éléctoral.
-	Imaginons deux candidats, Camille Carré <img src="play/img/square.png"/> et Théo Triangle <img src="play/img/triangle.png"/>, le long de deux axes politiques (par exemple, «&#8239;droite contre gauche&#8239;» et «&#8239;mondialisation contre protectionnisme&#8239;»). Imaginons aussi un élécteur <img src="play/img/voter.png"/> qui vote pour la ou le candidat le plus proche de ses convictions. À quoi est-ce que ça ressemble&nbsp;?</p>
-
-</div>
-<div class="sim-intro">
-
-	<p class="caption" style="margin-top:30px">
-		<b><span style="font-size:2.5em;">cliquez &amp; faites glisser</span><br>les candidats et l'électeur:</b>
-	</p>
-	<iframe src="play/model1.html" width="305" height="360" scrolling="no"></iframe>
-
-</div>
-<div class="words">
-
-	<p>Ce n'est pas simple. Triangle a des arguments pointus, mais Carré a davantage de dimensions&nbsp;! Hélas, au final on ne peut voter que pour une seule personne.</p>
-
-	<p>Bien sûr, il y d'autres votants dans une élection. Voyons à quoi ressemble le scrutin avec une centaine de votants.</p>
-
-</div>
-<div class="sim-intro">
-
-	<p class="caption">
-		<b>déplacez les candidats &amp; <span class="underline">les</span> électeurs.<br>(pour les déplacer, faites glisser le <em>centre</em> de la foule)<br>observez comment le résultat de l'élection évolue&nbsp;:</b>
-	</p>
-	<iframe src="play/model2.html" width="320" height="400" scrolling="no"></iframe>
-
-</div>
-<div class="words">
-
-	<p>Voici maintenant une autre élection. Théo Triangle est <em>déjà</em> devant Camille Carré dans les sondages, quand un 3<sup>e</sup> candidat, Hichem Hexagone <img src="play/img/hexagon.png"/> se présente (les soutiens d'Hexagone aiment le fait qu'il voit les problèmes sous plus d'angles). Inspiré par son succès, il se place politiquement très proche de Triangle.</p>
-
-	<p>On pourrait croire que donner aux élécteurs davantage de ce qu'ils aiment donnera un <em>meilleur</em> résultat, ou au moins, pas <em>pire</em>, n'est ce pas&nbsp;? Et bien&hellip;</p>
-
-</div>
-<div class="sim-intro">
-
-	<p class="caption">
-		<b>
-		au départ, <img src="play/img/triangle.png"> gagne contre <img src="play/img/square.png">.<br>
-		glissez <img src="play/img/hexagon.png"> <i>juste en dessous</i> de <img src="play/img/triangle.png">,<br>
-		et voyez ce qui se passe&nbsp;:</b>
-	</p>
-	<iframe src="play/model3.html" width="320" height="460" scrolling="no"></iframe>
-
-</div>
-<div class="words">
-
-	<p>Et oui. Camille Carré, la candidate la <em>moins</em> populaire, l'emporte&nbsp;! Quand vous avez deux bons candidats, ils se «&#8239;volent&#8239;» des voix entre eux, ce qui permet à un troisième, moins bon, de gagner.</p>
-
-	<p>On appelle ça le partage des voix. L'exemple français le plus célèbre est l'élection de 2002, quand de nombreux candidats minoritaires de gauche ont «&#8239;pris&#8239;» des votes à Lionel Jospin, permmettant à Jean-Marie Le Pen de se hisser, contre toute attente, au second tour. Le partage des voix était moins important en 2017 en raison de nombreuses primaires destinées à réduire le nombre de candidat·e·s, mais ses effets pouvaient quand même se sentir.</p>
-
-	<p>Mais encore une fois, le sujet n'est <em>pas</em> l'élection présidentielle de 2017.</p>
-
-	<p><strong>Le but est de construire une démocratie en laquelle les gens ont <em>confiance</em>.</strong></p>
-
-<!-- Exemple inadapté en France
-	<p>Malgré tout le brouhaha autour des élections de 2017, de <em>nombreux</em> français n'iront pas voter. Et parmi ceux qui ont voté pour Clinton/Trump, <a href="http://www.nytimes.com/interactive/2016/11/08/us/politics/election-exit-polls.html">20 % ont déclaré ne pas avoir confiance en leur candidat</a>, mais <em>ont quand même voté pour eux</em>. <a href="https://www.theatlantic.com/international/archive/2016/07/trust-institutions-trump-brexit/489554/">Partout dans le monde, la confiance des gens en leur gouvernements</a> - ou la crédibilité des élus - n'a jamais été aussi basse. Ce n'est pas la démocratie Américaine qui est en jeu. C'est <em>toutes les démocraties au monde</em>.</p>
-
-	<p>&hellip;tranquille.</p>-->
-
-	<p>Rétablir la confiance est une tâche complexe sans solution simple. Mais je pense qu'il <em>existe bien</em> une première étape simple. C'est une étape qui pourrait éviter le besoin de «&#8239;choisir entre deux maux&#8239;», et qui pourrait donner aux citoyens plus de choix, de <em>meilleurs</em> choix. Et pourtant, cette solution n'est pas si intimidante que de revoir le financement des partis, les circonscriptions électorales, ou le manque de <em>représentation proportionnelle</em>. Non, il s'agit uniquement de changer un <em>bout de papier</em>, et la méthode pour compter ces papiers.</p>
-
-	<p>Cette idée <em>n'est pas</em> le principal problème. Ça <em>n'est pas</em> la solution à tout. Mais par rapport à l'effort fourni, c'est là qu'on pourra faire le plus d'améliorations.</p>
-
-	<p><strong>Voyons comment créer un meilleur scrutin.</strong></p>
-
-</div>
-
-<!-- - - - - - - - - 
+	<p>
+…tranquille.
+</p>-->
+			<p>
+				Rétablir la confiance est une tâche complexe sans solution simple. Mais je pense qu'il <em>existe bien</em> une première étape simple. C'est une étape qui pourrait éviter le besoin de «&#8239;choisir entre deux maux&#8239;», et qui pourrait donner aux citoyens plus de choix, de <em>meilleurs</em> choix. Et pourtant, cette solution n'est pas si intimidante que de revoir le financement des partis, les circonscriptions électorales, ou le manque de <em>représentation proportionnelle</em>. Non, il s'agit uniquement de changer un <em>bout de papier</em>, et la méthode pour compter ces papiers.
+			</p>
+			<p>
+				Cette idée <em>n'est pas</em> le principal problème. Ça <em>n'est pas</em> la solution à tout. Mais par rapport à l'effort fourni, c'est là qu'on pourra faire le plus d'améliorations.
+			</p>
+			<p>
+				<strong>Voyons comment créer un meilleur scrutin.</strong>
+			</p>
+		</div>
+		<!-- - - - - - - - - 
 
 PART I:
 THE ALTERNATIVE BALLOTS
 
 - - - - - - - - - -->
-
-<div class="banner">
-	<img src="img/part1.png"/>
-</div>
-<div class="words">
-
-	<p>Bon, vous avez sans doute quelques objections&nbsp;!</p>
-
-	<p>Premierement, pourquoi est-ce ceux qui sont au pouvoir changeraient le mode de scrutin qui leur <em>a permis d'accéder au pouvoir</em>&nbsp;? Et bien, la droite comme la gauche ont déjà perdu des élections importantes à cause du partage des voix. Supprimer ce bug serait un avantage pour les petits partis <em>mais aussi</em> pour les grands&nbsp;! Par ailleurs, ce genre de réforme électorale fait déjà des émules. Il y a quelques mois seulement, <a href="http://www.nytimes.com/2016/12/03/us/maine-ranked-choice-voting.html" title="&quot;Maine Adopts Ranked-Choice Voting. What Is It, and How Will It Work?&quot;, Katharine Q. Seelye, New York Times">l'état du Maine a adopté la méthode du Vote Alternatif</a>. Et Justin Trudeau, <a href="http://cdn.pinknews.co.uk/images/2016/02/justin_trudeau.jpg">le premier ministre «&#8239;beau-gosse&#8239;» du Canada</a>, veut mettre en place un meilleur scrutin dans son pays dès 2017.</p>
-
-	<p>Deuxiemement, j'ai cru entendre que quelqu'un avait démontré que <em>tous</em> les modes de scrutins étaient injustes&nbsp;? Pas exactement. Vous pensez au célèbre <a href="https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_d%27impossibilit%C3%A9_d%27Arrow">théorème d'impossibilité</a> de Kenneth Arrow, le mathématicien qui, dans les années 50, a lancé l'étude des systèmes électoraux.</p>
-
-	<p>Il y a deux réponses à ça&nbsp;: 1) il n'en reste pas moins que certains types de scrutins sont <em>plus</em> justes que d'autres, même si aucun n'est parfait. Et 2) la démonstration de Kenneth Arrow ne <em>s'applique pas</em> à tous les types de votes, c'est une erreur fréquente. Elle ne s'applique qu'aux systèmes où l'on <em>range les candidats selon un ordre</em>. Plus tard, nous verrons quelques systèmes où l'on ne range <em>pas</em> les candidats, ainsi que d'autres alternatives à notre système électoral actuel et ses problèmes.</p>
-
-	<p>Mais d'abord, voyons de plus près les systèmes de vote qui sont utilisés aujourd'hui&nbsp;:</p>
-
-</div>
-<div class="sim-ballot">
-
-	<h2 class="ballot_title" style="margin-bottom: 0.2em;">SCRUTIN UNINOMINAL MAJORITAIRE</h2>
-	<p class="ballot_caption">comme avant, cliquez &amp; glissez<br>les candidats et l'électeur</p>
-
-	<iframe src="play/ballot1.html" width="655" height="256" scrolling="no"></iframe>
-</div>
-<div class="words">
-
-	<p><strong>Comment compter&nbsp;:</strong> On additionne tout simplement les voix. Celui ou celle qui a le plus de voix, gagne.</p>
-
-	<p>Ça semble logique, mais comme on l'a déjà vu cela peut produire un bug étrange, où deux <em>bons</em> candidats peuvent faire basculer le résultat en faveur d'un troisième, <em>mauvais</em> candidat. C'est la raison pour laquelle certaines personnes votent «&#8239;stratégiquement&#8239;» , en votant non pas pour leur véritable favori, mais choissisent «&#8239;le moins pire&#8239;» . Laisser les gens voter de façon stratégique n'est pas un problème en soi, mais, posez-vous la question&nbsp;: <b>comment peut-on s'attendre à ce que nos élus soient honêtes, quand le scrutin <em>lui-même</em> ne nous permet pas de voter honnêtement&nbsp;?</b></p>
-
-	<p>Bref, pour résoudre le problème du partage de voix, d'autres systèmes ont étés suggérés, tels que…</p>
-</div>
-<div class="sim-ballot">
-
-	<h2 class="ballot_title" style="margin-bottom: 0.15em;">VOTE PAR CLASSEMENT</h2>
-	<p class="ballot_caption">là aussi, cliquez &amp; faites glisser</p>
-
-	<iframe src="play/ballot2.html" width="655" height="256" scrolling="no"></iframe>
-
-</div>
-<div class="words">
-
-	<p><strong>Comment compter&nbsp;:</strong> il y a en fait <em>plusieurs</em> façons de compter ce genre de bulletins. Je vais parler ici des trois principales méthodes…</p>
-
-	<p>
-
-	<strong>Vote à Tours Instantanés&nbsp;:</strong> c'est l'alternative <em>la plus populaire</em> au scrutin uninominal majoritaire.
-
-	L'Australie et l'Irlande l'utilisent pour leur élections nationales.
-	San Francisco, Minneapolis, et Portland (état du Maine) l'ont choisi pour les municipales.
-	Et Justin Trudeau, <a href="https://queerty-prodweb.s3.amazonaws.com/wp/docs/2016/02/justintrudeautorontopride.jpg">Premier ministre viril du Canada</a>, réflechit aussi au vote à tours instantanés.
-	</p>
-
-	<!-- Pas sûr que ces détails soient importants en français où les traductions n'existent pas toujours
+		<div class="banner">
+			<img src="img/part1.png" />
+		</div>
+		<div class="words">
+			<p>
+				Bon, vous avez sans doute quelques objections&nbsp;!
+			</p>
+			<p>
+				Premierement, pourquoi est-ce ceux qui sont au pouvoir changeraient le mode de scrutin qui leur <em>a permis d'accéder au pouvoir</em>&nbsp;? Et bien, la droite comme la gauche ont déjà perdu des élections importantes à cause du partage des voix. Supprimer ce bug serait un avantage pour les petits partis <em>mais aussi</em> pour les grands&nbsp;! Par ailleurs, ce genre de réforme électorale fait déjà des émules. Il y a quelques mois seulement, <a href="http://www.nytimes.com/2016/12/03/us/maine-ranked-choice-voting.html" title="&quot;Maine Adopts Ranked-Choice Voting. What Is It, and How Will It Work?&quot;, Katharine Q. Seelye, New York Times">l'état du Maine a adopté la méthode du Vote Alternatif</a>. Et Justin Trudeau, <a href="http://cdn.pinknews.co.uk/images/2016/02/justin_trudeau.jpg">le premier ministre «&#8239;beau-gosse&#8239;» du Canada</a>, veut mettre en place un meilleur scrutin dans son pays dès 2017.
+			</p>
+			<p>
+				Deuxiemement, j'ai cru entendre que quelqu'un avait démontré que <em>tous</em> les modes de scrutins étaient injustes&nbsp;? Pas exactement. Vous pensez au célèbre <a href="https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_d%27impossibilit%C3%A9_d%27Arrow">théorème d'impossibilité</a>				de Kenneth Arrow, le mathématicien qui, dans les années 50, a lancé l'étude des systèmes électoraux.
+			</p>
+			<p>
+				Il y a deux réponses à ça&nbsp;: 1) il n'en reste pas moins que certains types de scrutins sont <em>plus</em> justes que d'autres, même si aucun n'est parfait. Et 2) la démonstration de Kenneth Arrow ne <em>s'applique pas</em> à tous les types de votes, c'est une erreur fréquente. Elle ne s'applique qu'aux systèmes où l'on <em>range les candidats selon un ordre</em>. Plus tard, nous verrons quelques systèmes où l'on ne range <em>pas</em> les candidats, ainsi que d'autres alternatives à notre système électoral actuel et ses problèmes.
+			</p>
+			<p>
+				Mais d'abord, voyons de plus près les systèmes de vote qui sont utilisés aujourd'hui&nbsp;:
+			</p>
+		</div>
+		<div class="sim-ballot">
+			<h2 class="ballot_title" style="margin-bottom: 0.2em;">SCRUTIN UNINOMINAL MAJORITAIRE</h2>
+			<p class="ballot_caption">comme avant, cliquez &amp; glissez<br>les candidats et l'électeur
+			</p>
+			<iframe src="play/ballot1.html" width="655" height="256" scrolling="no"></iframe>
+		</div>
+		<div class="words">
+			<p>
+				<strong>Comment compter&nbsp;:</strong> On additionne tout simplement les voix. Celui ou celle qui a le plus de voix, gagne.
+			</p>
+			<p>
+				Ça semble logique, mais comme on l'a déjà vu cela peut produire un bug étrange, où deux <em>bons</em> candidats peuvent faire basculer le résultat en faveur d'un troisième, <em>mauvais</em> candidat. C'est la raison pour laquelle certaines personnes votent «&#8239;stratégiquement&#8239;» , en votant non pas pour leur véritable favori, mais choissisent «&#8239;le moins pire&#8239;» . Laisser les gens voter de façon stratégique n'est pas un problème en soi, mais, posez-vous la question&nbsp;: <b>comment peut-on s'attendre à ce que nos élus soient honêtes, quand le scrutin <em>lui-même</em> ne nous permet pas de voter honnêtement&nbsp;?</b>
+			</p>
+			<p>
+				Bref, pour résoudre le problème du partage de voix, d'autres systèmes ont étés suggérés, tels que…
+			</p>
+		</div>
+		<div class="sim-ballot">
+			<h2 class="ballot_title" style="margin-bottom: 0.15em;">VOTE PAR CLASSEMENT</h2>
+			<p class="ballot_caption">
+				là aussi, cliquez &amp; faites glisser
+			</p>
+			<iframe src="play/ballot2.html" width="655" height="256" scrolling="no"></iframe>
+		</div>
+		<div class="words">
+			<p>
+				<strong>Comment compter&nbsp;:</strong> il y a en fait <em>plusieurs</em> façons de compter ce genre de bulletins. Je
+				vais parler ici des trois principales méthodes…
+			</p>
+			<p>
+				<strong>Vote Alternatif&nbsp;:</strong> c'est l'alternative <em>la plus populaire</em> au Scrutin Uninominal Majoritaire. L'Australie et l'Irlande l'utilisent pour leur élections nationales. San Francisco, Minneapolis, et Portland(état du Maine) l'ont choisi pour les municipales. Et Justin Trudeau, <a href="https://queerty-prodweb.s3.amazonaws.com/wp/docs/2016/02/justintrudeautorontopride.jpg">Premier ministre viril du Canada</a>, réflechit aussi au vote alternatif.
+			</p>
+			<!-- Pas sûr que ces détails soient importants en français où les traductions n'existent pas toujours
 	<i>
 	(Note : le vote à tours instantanés est aussi appellé ~~"Ranked Choice Voting",
 	bien qu'il existe d'autres façons de compter les bulletins avec ~classement.
 	~IRV/VTI est souvent simplement appellé «&#8239;vote alternatif",
 	alors qu'il existe une douzaine de modes de scrutin différents.
 	Quel égoisme dans le nommage, franchement !)
-	</p>-->
-
-	<p>Le Vote à Tours Instantanés est un peu plus compliqué que Scrutin Majoritaire, mais voilà comment ça fonctionne&nbsp;:</p>
-
-	<ol>
-	<li>On compte tous les 1<sup>ers</sup> choix.</li>
-	<li>Si une personne a plus de 50&#8239;% des voix, elle gagne&nbsp;! FIN.</li>
-	<li>Sinon, on élimine celui ou celle qui a eu le moins de voix.</li>
-	<li>Nouveau «&#8239;tour&#8239;»&nbsp;: on compte les voix comme si le candidat éliminé ne s'était pas présenté.</li>
-	<li>On répete cette opération jusqu'à ce que quelqu'un ait 50&#8239;% ou plus des voix.</li>
-	</ol>
-
-	<p>Si tout ça semble trop lourd, il y a bien une méthode bien plus simple de compter des bulletins avec classement&hellip;</p>
-
-	<p><strong>Méthode Borda&nbsp;:</strong> il s'agit simplement d'additionner les rangs. Comme au golf, celui ou celle qui a <em>le plus petit</em> score l'emporte. Le décompte de Borda est utilisé en Slovénie et dans une poignée de petites îles en Micronésie.</p>
-
-	<p>Mais si vous voulez une méthode de décompte plus obscure, vous pouvez essayer…</p>
-
-	<p><strong>La Méthode Condorcet&nbsp;:</strong> simuler une «&#8239;élection&#8239;» entre chaque de candidat·e·s, en utilisant les informations de classement fournies par les électeurs sur leurs bulletins. SI il y a un candidat qui bas tous les autres en un-contre-un, ce candidat gagne l'élection. Attention, c'est un gros SI (comme nous le verrons plus tard…). Le bon côté de cette méthode, c'est que quand elle permet de déterminer une gagnant, c'est, théoriquement, toujours le meilleur. Pour l'instant, cette méthode n'est pas utilisée par un ou pluseurs gouvernenments.</p>
-
-	<p>Voilà, vous connaissez désormais les modes de scrutin <em>où l'on trie les candidats</em> – ceux pour lesquels Kenneth Arrow a dénomtré qu'ils étaient <em>toujours</em> invalide de manière crasse&nbsp;! Mais quels sont les modes de scrution où l'on ne <em>trie pas</em> les candidats&nbsp;? Ils sont plus méconnus mais maintenant, au moins, vous les connaitrez&nbsp;:</p>
-
-</div>
-<div class="sim-ballot">
-
-	<h2 class="ballot_title" style="margin-bottom: 0.15em;">VOTE PAR APPROBATION</h2>
-	<p class="ballot_caption">ouaip, toujours cliquer &amp; glisser</p>
-
-	<iframe src="play/ballot3.html" width="655" height="256" scrolling="no"></iframe>
-
-</div>
-<div class="words">
-
-	<p><strong>Comment compter&nbsp;:</strong> ajoutez les approbations. La personne qui a le plus d'approbations gagne.</p>
-
-	<p><em>Quoi, choisir plus d'un candidat&nbsp? Est-ce que c'est pas de la triche, comme si on avait plusieurs votes par personne&nbsp;?</em> Je comprends votre interrogation. En fait, votre vote n'a jamais été qu'une simple voix. Quand vous votez, vosu exprimez votre avis sur <em>l'ensemble des candidat·e·s</em>. Dans ce mode de scrutin, vous avez seulement la liberté de soutenir <em>tous</em> les candidats que vous approuvez pas uniquement votre favori ou votre deuxième favori «&#8239;stratégique&#8239;».</p>
-
-	<p>Mais si vous voulez un mode de scrutin <em>encore plus</em> explicite, pourquoi ne pas essayer le…</p>
-
-</div>
-<div class="sim-ballot">
-
-	<h2 class="ballot_title" style="margin-bottom: 0.15em;">VOTE PONDÉRÉ</h2>
-	<p class="ballot_caption">vous savez quoi faire.</p>
-
-	<iframe src="play/ballot4.html" width="655" height="256" scrolling="no"></iframe>
-
-</div>
-<div class="words">
-
-	<p><strong>Comment compter&nbsp;:</strong> additionnez simplement les notes. Celui ou celle qui a le score moyen le plus haut, gagne. Un peu comme les notes des commentaires Amazon, mais version Démocratie (note&nbsp;: ceci <em>n'est pas</em> un vote par classement, car deux candidats peuvent avoir le <em>même</em> score).</p>
-
-	<p>Voilà donc les sixic systèmes qu'on retrouve le plus souvent&nbsp;: celui que nous utilisons, et cinq alternatives populaires. Mais comment savoir laquelle de ces alternatives est, en vrai, la meilleure&nbsp;? Est-ce que <em>elles-mêmes</em> n'auraient pas des bugs&nbsp;? Et du coup, connaissant ces bugs, quel mode de scrutin serait «&#8239;le meilleur&#8239;»&nbsp;?</p>
-
-	<p>Comme on l'a fait avant, simulons des élections&nbsp;!</p>
-
-</div>
-
-<!-- - - - - - - - - 
+	
+</p>-->
+			<p>
+				Le Vote Alternatif est un peu plus compliqué que Scrutin Majoritaire, mais voilà comment ça fonctionne&nbsp;:
+			</p>
+			<ol>
+				<li>On compte tous les 1<sup>ers</sup> choix.</li>
+				<li>Si une personne a plus de 50&#8239;% des voix, elle gagne&nbsp;! FIN.</li>
+				<li>Sinon, on élimine celui ou celle qui a eu le moins de voix.</li>
+				<li>Nouveau «&#8239;tour&#8239;»&nbsp;: on compte les voix comme si le candidat éliminé ne s'était pas présenté.</li>
+				<li>On répete cette opération jusqu'à ce que quelqu'un ait 50&#8239;% ou plus des voix.</li>
+			</ol>
+			<p>
+				Si tout ça semble trop lourd, il y a bien une méthode bien plus simple de compter des bulletins avec classement…
+			</p>
+			<p>
+				<strong>Méthode Borda&nbsp;:</strong> il s'agit simplement d'additionner les rangs. Comme au golf, celui ou celle qui
+				a <em>le plus petit</em> score l'emporte. Le décompte de Borda est utilisé en Slovénie et dans une poignée de petites
+				îles en Micronésie.
+			</p>
+			<p>
+				Mais si vous voulez une méthode de décompte plus obscure, vous pouvez essayer…
+			</p>
+			<p>
+				<strong>La Méthode Condorcet&nbsp;:</strong> simuler une «&#8239;élection&#8239;» entre chaque de candidat·e·s, en utilisant
+				les informations de classement fournies par les électeurs sur leurs bulletins. SI il y a un candidat qui bas tous les
+				autres en un-contre-un, ce candidat gagne l'élection. Attention, c'est un gros SI (comme nous le verrons plus tard…).
+				Le bon côté de cette méthode, c'est que quand elle permet de déterminer une gagnant, c'est, théoriquement, toujours le
+				meilleur. Pour l'instant, cette méthode n'est pas utilisée par un ou pluseurs gouvernenments.
+			</p>
+			<p>
+				Voilà, vous connaissez désormais les modes de scrutin <em>où l'on trie les candidats</em> – ceux pour lesquels Kenneth
+				Arrow a dénomtré qu'ils étaient <em>toujours</em> invalide de manière crasse&nbsp;! Mais quels sont les modes de scrution
+				où l'on ne <em>trie pas</em> les candidats&nbsp;? Ils sont plus méconnus mais maintenant, au moins, vous les connaitrez&nbsp;:
+			</p>
+		</div>
+		<div class="sim-ballot">
+			<h2 class="ballot_title" style="margin-bottom: 0.15em;">VOTE PAR APPROBATION</h2>
+			<p class="ballot_caption">ouaip, toujours cliquer &amp; glisser
+			</p>
+			<iframe src="play/ballot3.html" width="655" height="256" scrolling="no"></iframe>
+		</div>
+		<div class="words">
+			<p>
+				<strong>Comment compter&nbsp;:</strong> ajoutez les approbations. La personne qui a le plus d'approbations gagne.
+			</p>
+			<p>
+				<em>Quoi, choisir plus d'un candidat&nbsp? Est-ce que c'est pas de la triche, comme si on avait plusieurs votes par personne&nbsp;?</em>				Je comprends votre interrogation. En fait, votre vote n'a jamais été qu'une simple voix. Quand vous votez, vosu exprimez
+				votre avis sur <em>l'ensemble des candidat·e·s</em>. Dans ce mode de scrutin, vous avez seulement la liberté de soutenir
+				<em>tous</em> les candidats que vous approuvez pas uniquement votre favori ou votre deuxième favori «&#8239;stratégique&#8239;».
+			</p>
+			<p>
+				Mais si vous voulez un mode de scrutin <em>encore plus</em> explicite, pourquoi ne pas essayer le…
+			</p>
+		</div>
+		<div class="sim-ballot">
+			<h2 class="ballot_title" style="margin-bottom: 0.15em;">VOTE PONDÉRÉ</h2>
+			<p class="ballot_caption">vous savez quoi faire.
+			</p>
+			<iframe src="play/ballot4.html" width="655" height="256" scrolling="no"></iframe>
+		</div>
+		<div class="words">
+			<p>
+				<strong>Comment compter&nbsp;:</strong> additionnez simplement les notes. Celui ou celle qui a le score moyen le plus
+				haut, gagne. Un peu comme les notes des commentaires Amazon, mais version Démocratie (note&nbsp;: ceci <em>n'est pas</em>				un vote par classement, car deux candidats peuvent avoir le <em>même</em> score).
+			</p>
+			<p>
+				Voilà donc les sixic systèmes qu'on retrouve le plus souvent&nbsp;: celui que nous utilisons, et cinq alternatives populaires.
+				Mais comment savoir laquelle de ces alternatives est, en vrai, la meilleure&nbsp;? Est-ce que <em>elles-mêmes</em>				n'auraient pas des bugs&nbsp;? Et du coup, connaissant ces bugs, quel mode de scrutin serait «&#8239;le meilleur&#8239;»&nbsp;?
+			</p>
+			<p>
+				Comme on l'a fait avant, simulons des élections&nbsp;!
+			</p>
+		</div>
+		<!-- - - - - - - - - 
 
 PART II:
 HOW DO THE ALTERNATIVES HOLD UP?
 
 - - - - - - - - - -->
-
-<div class="banner">
-	<img src="img/part2.png"/>
-</div>
-<div class="words">
-	<p>Vous vous rappelez de la simulation du partage des voix que nous avons vu un peu plus tôt&nbsp;? Et bien, la revoilà, sauf que cette fois vous pouvez basculer entre six modes de scrutin différents&nbsp;!</p>
-</div>
-<div class="sim-test">
-	<p class="caption-test">
-	déplacez <img src="play/img/hexagon.png"> <em>juste en dessous</em> de <img src="play/img/triangle.png"> pour voir le partage des voix.<br>
-	comparez ensuite les six modes de scrutins&nbsp;:
-	<br>
-	<span style="font-weight:bold; font-size:0.8em">
+		<div class="banner">
+			<img src="img/part2.png" />
+		</div>
+		<div class="words">
+			<p>
+				Vous vous rappelez de la simulation du partage des voix que nous avons vu un peu plus tôt&nbsp;? Et bien, la revoilà, sauf
+				que cette fois vous pouvez basculer entre six modes de scrutin différents&nbsp;!
+			</p>
+		</div>
+		<div class="sim-test">
+			<p class="caption-test">
+				déplacez <img src="play/img/hexagon.png"> <em>juste en dessous</em> de <img src="play/img/triangle.png" alt="Théo Triangle"
+				/> pour voir le partage des voix.<br> comparez ensuite les six modes de scrutins&nbsp;:
+				<br>
+				<span style="font-weight:bold; font-size:0.8em">
 	(note: dans les rares cas d'ex-æquo, je choisi aléatoirement le vainqueur)
 	</span>
-	</p>
-
-	<iframe src="play/election1.html" width="800" height="380" scrolling="no"></iframe>
-</div>
-<div class="words">
-
-	<p>Comme vous pouvez le voir, <em>tous</em> les modes de scrutin sont immunisés contre le vol de voix sauf le Scrutin Uninominal Majoritaire. Quoi, c'est bon, on a fini&nbsp;? Bang bang, le bug est mort&nbsp;? On a  juste à choisir une des alternatives et c'est réglé&nbsp;?</p>
-
-	<p>Et non ! En se débarrassant d'un bug, ces modes de scruting alternatifs créent <em>d'autres</em> bugs. Dans certains cas, le remède est pire que la maladie.</p>
-
-	<p>Prenons par exemple, le Vote Alternatif. Au début, Théo Triangle <img src="play/img/triangle.png"/> gagne, et vous allez encore <em>rapprocher</em> davantage les intentions de vote vers lui. Normalement, si un·e candidat·e est déjà en train de gagner une élection, et devient <em>encore plus</em> populaire, ils devraient toujours gagner, non&nbsp;?</p>
-
-	<p>Vous avez probablement deviné où je voulais en venir…</p>
-</div>
-<div class="sim-test">
-
-	<p class="caption-test">
-	déplacez les votans <img src="play/img/voters.png"> <em>doucement</em> vers <img src="play/img/triangle.png">:
-	</p>
-
-	<iframe src="play/election2.html" width="800" height="380" scrolling="no"></iframe>
-
-</div>
-<div class="words">
-
-	<p>Que s'est-il passé&nbsp;?
-	À la base, <img src="play/img/hexagon.png"/> est éliminé au premier tour, donc <img src="play/img/triangle.png"/>
-	se retrouve confronté à <img src="play/img/square.png"/>, qui est plus faible, et gagne.
-	Mais quand on déplace un tout petit peu les intentions de votes dans la direction de <img src="play/img/triangle.png"/>,
-	la personne éliminée <em>change</em>&nbsp;!
-	Maintenant, <img src="play/img/square.png"/> est éliminée,
-	ce qui veut dire que <img src="play/img/triangle.png"/> se retrouve face à <img src="play/img/hexagon.png"/>, qui est plus fort, et <em>perd</em>.</p>
-
-	<p>Avec le Vote Alternatif, il est donc possible qu'un favori <em>perde en devenant plus populaire</em>. Quelle absurdité&nbsp;!</p>
-
-	<p>Est-ce que ça arrive souvent&nbsp;? <a href="http://aceproject.org/main/francais/es/esy_au.htm" title="&quot;Vote Alternatif en Australie&quot;, The Electoral Knowledge Network">Il y a quelques cas confirmés</a>, et <a href="http://www.rangevoting.org/Monotone.html" title="&quot;(non)Monotonicity and Instant Runoff Voting&quot;, Warren D. Smith">des mathématiciens estime que ce bug pourrait se produire dans 14.5&#8239;% des cas</a>. Malheureusement, nous ne pouvons pas le savoir avec certitude car les gouvernements n'ouvrent pas tous <em>suffisament d'informations relatives aux votes</em> pour reconstruire le <abbr title="Vote Alternatif">VA</abbr> et vérifier les résultats.</p>
-
-	<p>Donc, non seulement le bug du Vote Alternatif est aussi peu démocratique que celui du Scrutin Uninominal Majoritaire mais, <em>pire</em>, sa méthode de décompte est complexe et opaque, ce qu'on ne peut pas reprocher au <abbr title="Scrutin Uninominal Majoritaire">SUM</abbr>. Vous savez comme moi qu'une absence de transparence est encore plus problématique de nos jours tant la confiance dans les gouvernements n'a jamais été aussi faible.</p>
-
-	<p>(Attendez&nbsp;! On parlera du risque du <em>vote stratégique</em> plus tard. Est-ce que le <abbr title="Vote Alternatif">VA</abbr> fera un retour inattendu&nbsp;? Suspens…)</p>
-
-	<p>Bref, s'en est fini de l'alternative la plus populaire. Qu'en est-il de la seconde alternative, la méthode de Borda&nbsp;? Dans la prochaine simulation, vous allez déplacer un candidat <em>perdant</em> dans la direction d'un autre. Dans le cas du <abbr title="Scrutin Uninominal Majoritaire">SUM</abbr>, le partage des voix aurait divisé leurs intentions de vote, les faisant perdre tous deux encore plus. Regardez ce qui arrive avec la méthode de Borda…</p>
-
-</div>
-<div class="sim-test">
-
-	<p class="caption-test">
-	déplacez <em>juste un peu</em> <img src="play/img/hexagon.png"> dans la direction de <img src="play/img/square.png">:
-	</p>
-
-	<iframe src="play/election3.html" width="800" height="380" scrolling="no"></iframe>
-
-</div>
-<div class="words">
-
-	<p>Et ouais. La méthode de Borda à <em>l'effet inverse</em> du partage des voix. Au lieu que ce soit un bon candidat qui en affaiblisse un autre en s'en rapprochant, avec la méthode de Borda, c'est un mauvais candidat qui <em>aide</em> un <em>autre mauvais candidat</em> en s'en rapprochant.</p>
-
-	<p>Here's what happened: at first, some voters ranked
-	<img src="play/img/square.png"/>&gt;<img src="play/img/triangle.png"/>&gt;<img src="play/img/hexagon.png"/>,
-	but when you moved <img src="play/img/hexagon.png"/> closer to <img src="play/img/square.png"/>,
-	those voters then <em>swung</em> to ranking
-	<img src="play/img/square.png"/>&gt;<img src="play/img/hexagon.png"/>&gt;<img src="play/img/triangle.png"/>,
-	hurting <img src="play/img/triangle.png"/> enough
-	to make her lose to <img src="play/img/square.png"/>.</p>
-
-	<p>Still, Borda's not the worst, and at least it's simpler and more transparent than Instant Runoff. But how does Condorcet Method compare? When Condorcet picks a winner, it's always the “theoretically best” winner – but that's <em>when</em> it picks a winner.</p>
-
-	<p>So far, I've just been simulating voters as a <em>single</em> group, with a center and some spread. But seeing how polarized politics is nowadays, one could imagine <em>several</em> groups of voters, with totally different centers. Now, Condorcet tries to pick the candidate who beats all other candidates in one-on-one races. But with <em>polarized</em> voters, you could end up with a Rock-Paper-Scissors-like loop, where a majority of voters prefer A to B, B to C, <em>and</em> C to A.</p>
-
-	<p>In certain situations, the other voting systems just had glitches. In Condorcet, the voting system <em>crashes.</em> Try it out for yourself:</p>
-</div>
-<div class="sim-test">
-
-	<p class="caption-test">
-	create your own “condorcet cycle”!<br>
-	move the voters <img src="play/img/voters.png"> in such a way that NOBODY wins:
-	</p>
-
-	<iframe src="play/election4.html" width="800" height="380" scrolling="no"></iframe>
-
-</div>
-<div class="words">
-
-	<p>Now, in actual practice – not that any government actually uses this voting system – when Condorcet fails to find a winner, the election falls back to another method like Borda Count. But if you do that, it'll get the glitches of its backup method. So it goes.</p>
-
-	<p>First Past The Post. Instant Runoff. Borda Count. Condorcet Method. Those were all the voting systems that use <em>ranking</em> – the ones that our math boy, Kenneth Arrow, proved would <em>always</em> be unfair or glitchy in some big way. What about the voting systems that <em>don't</em> use ranking, like Approval &amp; Score voting? Well…</p>
-
-	<p>…I couldn't come up with a simulation to show their flaws. Because, <em>in theory</em>, they don't have many big flaws.</p>
-
-	<p>
-	But that's a really, really, really big <em>“in theory!”</em>
-	It may be that, in <em>practice</em>, strategic voters use Approval &amp; Score Voting exactly like First Past The Post –
-	only approving or giving 5 stars to their top candidate, and disapproving or giving 1 star to all others,
-	even if they actually <em>like</em> the others.
-	<a href="http://www.fairvote.org/why-approval-voting-is-unworkable-in-contested-elections">(See FairVote's critique of Approval Voting, and defense of Instant Runoff)</a>
-	</p>
-
-	<p>
-	Then again, even if Approval &amp; Score Voting disincentivize you from expressing an honest <em>second</em> choice,
-	FPTP and IRV punish you for expressing an honest <em>first</em> choice.
-	Besides, if Approval can be "gamed", then that goes double for IRV.
-	<a href="http://www.rangevoting.org/LNH.html">(See this mathematician's critique of FairVote's critique, and defense of Approval)</a>
-	So, in the end… [confused shrugging sounds]</p>
-
-	<p>
-	We're gonna need a hecka lot more simulations.
-	</p>
-
-	<p>
-	So, below is a chart
-	<a href="https://electology.org/tactical-voting-basics">(source)</a>,
-	showing the results of 2.2 <em>million</em> simulations.
-	A <i>huge</i> variety of scenarios were tested. All-honest voters.
-	All-strategic voters. Half-honest, half-strategic.
-	Voters who know each others' preferences.
-	Voters who <i>don't</i> know each others' preferences.
-	Voters who only sorta-know each others' preferences.
-	And so on.
-	You can tell that a <em>real</em> mathematician made this chart,
-	because it's makin' my eyes bleed:
-	</p>
-
-	<p><img class="real" src="img/comparison.png"></p>
-
-	<p>
-	Each voting method's results is shown as an ugly-blue bar.
-	The further to the right a voting method is, the more it "maximizes happiness&#8239;» for the voters.
-	The higher up a voting method is, the simpler it is.
-	And a bar's width shows the range of a voting system's performance,
-	given different ratios of honest-to-strategic voters.
-	</p>
-
-	<p>
-	The first thing to note is that strategic voting makes voters <em>less happy</em> than honest voting
-	– in <em>all</em> voting systems! I was very surprised when I first learnt that.
-	(But it makes sense, if you think about, say, a crowded room full of people trying to talk. Any one person can be &quot;strategic&quot; by shouting over others, but if <em>everybody</em> is &quot;strategic&quot;, nobody can hear anybody, and all you're left with is sore throats and sad peeps.)</p>
-
-	<p>The other thing to note is which voting systems make people the happiest. If you have mostly honest voters, <em>Score Voting is best</em>. (with Borda Count a close second) And if you have mostly strategic voters, then <em>both Approval &amp; Score Voting are best</em>. (and with strategic voters, IRV does <em>just as bad</em> as FPTP)</p>
-
-	<p>However, those are still computer simulations. How would these different voting systems play out <em>in real life?</em> Well, we can't just get the DeLorean up to 88, go back in time before the 2016 election, change the voting system, and see what would happen…</p>
-
-	<p><em>…or can we?!</em></p>
-
-	<p>No, no we can't. But last month, researchers did something close enough.
-	<a href="http://www.vox.com/policy-and-politics/2016/11/25/13733322/instant-runoff-ranked-voting-2016">A polling study asked 1,000+ U.S. registered voters to rank &amp; rate the six presidential candidates</a>,
-	to simulate who would've won the (popular) vote under different voting systems!
-	(But keep in mind that if we had a different voting system in the primaries, we'd have different candidates <em>entirely</em>.
-	So take this study with a pillar of salt.)
-	The results: under Instant Runoff, Condorcet, and Approval Voting, the winner would've been Hillary Clinton. But under Score Voting, the winner would've been Donald Trump. And under Borda Count, the winner would've been… uh… <em>Gary Johnson?</em>
-	</p>
-
-	<p><em>?????</em></p>
-
-</div>
-<div class="sim-test">
-	<p class="caption-test">
-	a guesstimated model of the 2016 US election?…<br>
-	<span style="font-weight:100; font-size:0.85em">
-	how Clinton <img src="play/img/square.png"> wins IRV,
+			</p>
+			<iframe src="play/election1.html" width="800" height="380" scrolling="no"></iframe>
+		</div>
+		<div class="words">
+			<p>
+				Comme vous pouvez le voir, <em>tous</em> les modes de scrutin sont immunisés contre le vol de voix sauf le Scrutin Uninominal
+				Majoritaire. Quoi, c'est bon, on a fini&nbsp;? Bang bang, le bug est mort&nbsp;? On a juste à choisir une des alternatives
+				et c'est réglé&nbsp;?
+			</p>
+			<p>
+				Et non ! En se débarrassant d'un bug, ces modes de scruting alternatifs créent <em>d'autres</em> bugs. Dans certains
+				cas, le remède est pire que la maladie.
+			</p>
+			<p>
+				Prenons par exemple, le Vote Alternatif. Au début, Théo Triangle <img src="play/img/triangle.png" alt="Théo Triangle"
+				/> gagne, et vous allez encore <em>rapprocher</em> davantage les intentions de vote vers lui. Normalement, si un·e candidat·e
+				est déjà en train de gagner une élection, et devient <em>encore plus</em> populaire, ils devraient toujours gagner, non&nbsp;?
+			</p>
+			<p>
+				Vous avez probablement deviné où je voulais en venir…
+			</p>
+		</div>
+		<div class="sim-test">
+			<p class="caption-test">
+				déplacez les votans <img src="play/img/voters.png"> <em>doucement</em> vers <img src="play/img/triangle.png" alt="Théo Triangle"
+				/>:
+			</p>
+			<iframe src="play/election2.html" width="800" height="380" scrolling="no"></iframe>
+		</div>
+		<div class="words">
+			<p>
+				Que s'est-il passé&nbsp;? À la base, <img src="play/img/hexagon.png" /> est éliminé au premier tour, donc <img src="play/img/triangle.png" alt="Théo Triangle" /> se retrouve confronté à <img src="play/img/square.png" alt="Camille Carré" />, qui est plus faible, et gagne. Mais quand on déplace un tout petit peu les intentions de votes dans la direction de <img src="play/img/triangle.png" alt="Théo Triangle" />, la personne éliminée <em>change</em>&nbsp;! Maintenant, <img src="play/img/square.png" alt="Camille Carré" /> est éliminée, ce qui veut dire que <img src="play/img/triangle.png" alt="Théo Triangle" /> se retrouve face à <img src="play/img/hexagon.png" />, qui est plus fort, et <em>perd</em>.
+			</p>
+			<p>
+				Avec le Vote Alternatif, il est donc possible qu'un favori <em>perde en devenant plus populaire</em>. Quelle absurdité&nbsp;!
+			</p>
+			<p>
+				Est-ce que ça arrive souvent&nbsp;? <a href="http://aceproject.org/main/francais/es/esy_au.htm" title="&quot;Vote Alternatif en Australie&quot;, The Electoral Knowledge Network">Il y a quelques cas confirmés</a>, et <a href="http://www.rangevoting.org/Monotone.html" title="&quot;(non)Monotonicity and Instant Runoff Voting&quot;, Warren D. Smith">des mathématiciens estime que ce bug pourrait se produire dans 14.5&#8239;% des cas</a>. Malheureusement, nous ne pouvons pas le savoir avec certitude car les gouvernements n'ouvrent pas tous <em>suffisament d'informations relatives aux votes</em> pour reconstruire le <abbr title="Vote Alternatif">VA</abbr> et vérifier les résultats.
+			</p>
+			<p>
+				Donc, non seulement le bug du Vote Alternatif est aussi peu démocratique que celui du Scrutin Uninominal Majoritaire mais, <em>pire</em>, sa méthode de décompte est complexe et opaque, ce qu'on ne peut pas reprocher au <abbr title="Scrutin Uninominal Majoritaire">SUM</abbr>. Vous savez comme moi qu'une absence de transparence est encore plus problématique de nos jours tant la confiance dans les gouvernements n'a jamais été aussi faible.
+			</p>
+			<p>
+				(Attendez&nbsp;! On parlera du risque du <em>vote stratégique</em> plus tard. Est-ce que le <abbr title="Vote Alternatif">VA</abbr>				fera un retour inattendu&nbsp;? Suspens…)
+			</p>
+			<p>
+				Bref, s'en est fini de l'alternative la plus populaire. Qu'en est-il de la seconde alternative, la méthode de Borda&nbsp;? Dans la prochaine simulation, vous allez déplacer un candidat <em>perdant</em> dans la direction d'un autre. Dans le cas du <abbr title="Scrutin Uninominal Majoritaire">SUM</abbr>, le partage des voix aurait divisé leurs intentions de vote, les faisant perdre tous deux encore plus. Regardez ce qui arrive avec la méthode de Borda…
+			</p>
+		</div>
+		<div class="sim-test">
+			<p class="caption-test">
+				déplacez <em>juste un peu</em> <img src="play/img/hexagon.png"> dans la direction de <img src="play/img/square.png" alt="Camille Carré"/>:
+			</p>
+			<iframe src="play/election3.html" width="800" height="380" scrolling="no"></iframe>
+		</div>
+		<div class="words">
+			<p>
+				Et ouais. La méthode de Borda à <em>l'effet inverse</em> du partage des voix. Au lieu que ce soit un bon candidat qui en affaiblisse un autre en s'en rapprochant, avec la méthode de Borda, c'est un mauvais candidat qui <em>aide</em> un <em>autre mauvais candidat</em> en s'en rapprochant.
+			</p>
+			<p>
+				Qu'est-ce qui se passe&nbsp;? Au début, les votants classent
+				<img src="play/img/square.png" alt="Camille Carré" />&gt;<img src="play/img/triangle.png" alt="Théo Triangle" />&gt;<img src="play/img/hexagon.png" />, mais après vous déplacez <img src="play/img/hexagon.png" /> plus près que <img src="play/img/square.png" alt="Camille Carré" />, du coup les votants <em>basculent</em> vers un classement <img src="play/img/square.png" alt="Camille Carré" />&gt;<img src="play/img/hexagon.png" />&gt;<img src="play/img/triangle.png" alt="Théo Triangle" />, ce qui pénalise suffisament <img src="play/img/triangle.png" alt="Théo Triangle" /> pour le faire perdre face à <img src="play/img/square.png" alt="Camille Carré" />.
+			</p>
+			<p>
+				Still, Borda's not the worst, and at least it's simpler and more transparent than Instant Runoff. But how does Condorcet
+				Method compare? When Condorcet picks a winner, it's always the “theoretically best” winner – but that's <em>when</em>				it picks a winner.
+			</p>
+			<p>
+				So far, I've just been simulating voters as a <em>single</em> group, with a center and some spread. But seeing how polarized
+				politics is nowadays, one could imagine <em>several</em> groups of voters, with totally different centers. Now, Condorcet
+				tries to pick the candidate who beats all other candidates in one-on-one races. But with <em>polarized</em> voters, you
+				could end up with a Rock-Paper-Scissors-like loop, where a majority of voters prefer A to B, B to C, <em>and</em> C to
+				A.
+			</p>
+			<p>
+				In certain situations, the other voting systems just had glitches. In Condorcet, the voting system <em>crashes.</em>				Try it out for yourself:
+			</p>
+		</div>
+		<div class="sim-test">
+			<p class="caption-test">
+				create your own “condorcet cycle”!<br> move the voters <img src="play/img/voters.png"> in such a way that NOBODY wins:
+			</p>
+			<iframe src="play/election4.html" width="800" height="380" scrolling="no"></iframe>
+		</div>
+		<div class="words">
+			<p>
+				Now, in actual practice – not that any government actually uses this voting system – when Condorcet fails to find a winner, the election falls back to another method like Borda Count. But if you do that, it'll get the glitches of its backup method. So it goes.
+			</p>
+			<p>
+				First Past The Post. Instant Runoff. Borda Count. Condorcet Method. Those were all the voting systems that use <em>ranking</em>				– the ones that our math boy, Kenneth Arrow, proved would <em>always</em> be unfair or glitchy in some big way. What
+				about the voting systems that <em>don't</em> use ranking, like Approval &amp; Score voting? Well…
+			</p>
+			<p>
+				…I couldn't come up with a simulation to show their flaws. Because, <em>in theory</em>, they don't have many big flaws.
+			</p>
+			<p>
+				But that's a really, really, really big <em>“in theory!”</em> It may be that, in <em>practice</em>, strategic voters
+				use Approval &amp; Score Voting exactly like First Past The Post – only approving or giving 5 stars to their top candidate,
+				and disapproving or giving 1 star to all others, even if they actually <em>like</em> the others.
+				<a href="http://www.fairvote.org/why-approval-voting-is-unworkable-in-contested-elections">(See FairVote's critique of Approval Voting, and defense of Instant Runoff)</a>
+			</p>
+			<p>
+				Then again, even if Approval &amp; Score Voting disincentivize you from expressing an honest <em>second</em> choice,
+				FPTP and IRV punish you for expressing an honest <em>first</em> choice. Besides, if Approval can be "gamed", then that
+				goes double for IRV.
+				<a href="http://www.rangevoting.org/LNH.html">(See this mathematician's critique of FairVote's critique, and defense of Approval)</a>				So, in the end… [confused shrugging sounds]
+			</p>
+			<p>
+				We're gonna need a hecka lot more simulations.
+			</p>
+			<p>
+				So, below is a chart
+				<a href="https://electology.org/tactical-voting-basics">(source)</a>, showing the results of 2.2 <em>million</em> simulations.
+				A <i>huge</i> variety of scenarios were tested. All-honest voters. All-strategic voters. Half-honest, half-strategic.
+				Voters who know each others' preferences. Voters who <i>don't</i> know each others' preferences. Voters who only sorta-know
+				each others' preferences. And so on. You can tell that a <em>real</em> mathematician made this chart, because it's makin'
+				my eyes bleed:
+			</p>
+			<p>
+				<img class="real" src="img/comparison.png">
+			</p>
+			<p>
+				Each voting method's results is shown as an ugly-blue bar. The further to the right a voting method is, the more it "maximizes
+				happiness&#8239;» for the voters. The higher up a voting method is, the simpler it is. And a bar's width shows the range
+				of a voting system's performance, given different ratios of honest-to-strategic voters.
+			</p>
+			<p>
+				The first thing to note is that strategic voting makes voters <em>less happy</em> than honest voting – in <em>all</em>				voting systems! I was very surprised when I first learnt that. (But it makes sense, if you think about, say, a crowded
+				room full of people trying to talk. Any one person can be &quot;strategic&quot; by shouting over others, but if <em>everybody</em>				is &quot;strategic&quot;, nobody can hear anybody, and all you're left with is sore throats and sad peeps.)
+			</p>
+			<p>
+				The other thing to note is which voting systems make people the happiest. If you have mostly honest voters, <em>Score Voting is best</em>.
+				(with Borda Count a close second) And if you have mostly strategic voters, then <em>both Approval &amp; Score Voting are best</em>.
+				(and with strategic voters, IRV does <em>just as bad</em> as FPTP)
+			</p>
+			<p>
+				However, those are still computer simulations. How would these different voting systems play out <em>in real life?</em>				Well, we can't just get the DeLorean up to 88, go back in time before the 2016 election, change the voting system, and
+				see what would happen…
+			</p>
+			<p>
+				<em>…or can we?!</em>
+			</p>
+			<p>
+				No, no we can't. But last month, researchers did something close enough.
+				<a href="http://www.vox.com/policy-and-politics/2016/11/25/13733322/instant-runoff-ranked-voting-2016">A polling study asked 1,000+ U.S. registered voters to rank &amp; rate the six presidential candidates</a>,
+				to simulate who would've won the (popular) vote under different voting systems! (But keep in mind that if we had a different
+				voting system in the primaries, we'd have different candidates <em>entirely</em>. So take this study with a pillar of
+				salt.) The results: under Instant Runoff, Condorcet, and Approval Voting, the winner would've been Hillary Clinton. But
+				under Score Voting, the winner would've been Donald Trump. And under Borda Count, the winner would've been… uh… <em>Gary Johnson?</em>
+			</p>
+			<p>
+				<em>?????</em>
+			</p>
+		</div>
+		<div class="sim-test">
+			<p class="caption-test">
+				a guesstimated model of the 2016 US election?…<br>
+				<span style="font-weight:100; font-size:0.85em">
+	how Clinton <img src="play/img/square.png" alt="Camille Carré"/> wins IRV,
 	Trump <img src="play/img/hexagon.png"> wins Score,
-	and Johnson <img src="play/img/triangle.png"> wins Borda??
+	and Johnson <img src="play/img/triangle.png" alt="Théo Triangle"/> wins Borda??
 	</span>
-	</p>
-	<iframe src="play/election5.html" width="800" height="380" scrolling="no"></iframe>
-</div>
-<div class="words">
-
-	<p>Anyway.</p>
-
-	<p>Before we wrap all this up – remember Kenneth Arrow? The infamous mathematician who founded the study of voting systems in the 1950's? Well, <a href="https://electology.org/podcasts/2012-10-06_kenneth_arrow">in an interview 60 years later</a>, Kenneth Arrow had this to say, about which voting method he likes most now:</p>
-
-	<p class="quote">
-	<em>“Well, I’m a little inclined to think that score systems</em> [like Approval &amp; Score Voting] <em>where you categorize in maybe three or four classes</em> [so, giving a score out of 3 or 4, not 10 or 100] <em>probably – in spite of what I said about manipulation</em> [strategic voting] <em>– is probably the best.”</em></p>
-
-	<p>That's as strong an endorsement as you'll ever squeeze out of a math-head.</p>
-</div>
-
-<!-- - - - - - - - - 
+			</p>
+			<iframe src="play/election5.html" width="800" height="380" scrolling="no"></iframe>
+		</div>
+		<div class="words">
+			<p>
+				Anyway.
+			</p>
+			<p>
+				Before we wrap all this up – remember Kenneth Arrow? The infamous mathematician who founded the study of voting systems in
+				the 1950's? Well, <a href="https://electology.org/podcasts/2012-10-06_kenneth_arrow">in an interview 60 years later</a>,
+				Kenneth Arrow had this to say, about which voting method he likes most now:
+			</p>
+			<p class="quote">
+				<em>“Well, I’m a little inclined to think that score systems</em> [like Approval &amp; Score Voting] <em>where you categorize in maybe three or four classes</em>				[so, giving a score out of 3 or 4, not 10 or 100] <em>probably – in spite of what I said about manipulation</em> [strategic
+				voting] <em>– is probably the best.”</em>
+			</p>
+			<p>
+				That's as strong an endorsement as you'll ever squeeze out of a math-head.
+			</p>
+		</div>
+		<!-- - - - - - - - - 
 
 PART III:
 CONCLUSION. OPEN LETTER
 
 - - - - - - - - - -->
-
-<div class="banner">
-	<img src="img/part3.png"/>
-</div>
-<div class="words">
-
-	<p><em>ahem</em></p>
-
-	<p style="text-align:center">
-		<strong style="font-size:1.4em">DEAR JUSTIN <a href="http://www.newyorker.com/wp-content/uploads/2016/03/Borowitz-Justin-Trudeau.jpg">“TOTES ADORBZ”</a> TRUDEAU</strong><br>
-		<b style="font-size:0.93em">(and everyone else around the world pushing for voting reform)</b>
-	</p>
-
-	<p>Thank you for taking this small but powerful first step! We've known for way too long that our current voting system – First Past The Post – forces voters to be dishonest, creates a polarizing &quot;lesser of two evils&quot; scenario, and screws over both major <em>and</em> minor candidates.</p>
-
-	<p>
-	However, you're probably only considering Instant Runoff Voting.
-	Which, to be fair, <em>is</em> better than than First Past The Post,
-	and if it's a choice between just those two, <em>definitely</em> go for Instant Runoff.
-	But IRV still has a glitch as undemocratic as FPTP's –
-	and worse, in our age of distrust, Instant Runoff's lack of transparency may be deadly for democracy.
-	Yes, sure, IRV was the best voting system we could come up with…
-	<a href="https://en.wikipedia.org/wiki/History_and_use_of_instant-runoff_voting">in 1870</a>.
-	And since then, IRV has dominated the conversation,
-	unwittingly framing the whole voting reform debate as “simple vs expressive”.
-	</p>
-
-	<p>
-	<b>But that is a false choice.</b> Thanks to computer simulations, real-life studies, and a bunch of math nerds,
-	<b>we now know of voting systems that are both simple <i>and</i> expressive.</b>
-	</p>
-
-	<p>
-	<i>Personally</i>, I'm leaning towards Score Voting.
-	It's simple, very expressive, and already familiar to anyone who's seen Amazon's or Yelp's “five star” review system.
-	But that's just my humble opinion.
-	You could also make the case that Approval Voting is more <i>practical</i>,
-	because it's even simpler, and would <i>already work with existing voting machines!</i>
-	All you'd need to do is change the instructions from 
-	“vote for the candidate you like” to “vote for the candidate<b class="underline">s</b> you like”.
-	</p>
-
-	<p>
-	<em>Or maybe I'm completely wrong about Instant Runoff Voting, and it's actually pretty okay.</em>
-	Heck, you could even go for Borda Count, as a hilarious prank.
-	</p>
-
-	<p>I won't claim to know which voting system is The Best&trade;. I shall keep open this discussion, just as long as we <em>have</em> this discussion. For three reasons:</p>
-
-	<p>1) If I claim one voting system is the best, end of story, all the social-choice-theory nerds will be on my butt, yelling, BUT NICKY WHAT ABOUT <a href="http://www.law.uchicago.edu/faculty/research/eric-posner-quadratic-vote-buying-efficient-corporate-governance/qanda">QUADRATIC VOTE BUYING</a></p>
-
-	<p>2) We still need to test these alternative voting systems with <em>actual experience</em>,
-	not just <span style="text-decoration:line-through">annoying internet flame wars between IRV advocates and Score Voting advocates</span> theory.
-	All the more reason for small towns, local states, and nations like Canada to be <em>pioneers</em>, to bravely experiment!</p>
-
-	<p>3) Keeping the discussion going is what democracy <em>is</em>.</p>
-
-	<p><a href="http://www.journalofdemocracy.org/article/danger-deconsolidation-democratic-disconnect">A recent study</a> found that in many Western countries – from Sweden to Australia to the United States – support for democracy has <em>plummeted</em> over the last several generations.
-	In 2011, almost <em>a full quarter</em> of young Americans said democracy was a &quot;bad&quot; or &quot;very bad&quot; way to run a country.
-	And <em>today</em>, one in six Americans say it'd be &quot;good&quot; or &quot;very good&quot; to be under <em>actual military rule</em>.
-	</p>
-
-	<p>Our age of distrust goes a <em>lot</em> deeper than the technical details of a voting system. There isn't gonna be One Weird Trick to fix democracy. But as a first step, a low-hanging fruit, a way to show that, <em>yes</em>, you will make the system respond to the needs and wants and pains and hopes and dreams of your people – well, fixing our voting system's a good start as any.</p>
-
-	<p>Because, this isn't just about trying to build a better ballot.</p>
-
-	<p>This is about trying to build a better <em>democracy</em>.</p>
-
-	<p><strong>&lt;3,</strong><br>
-	<b>~ Nicky Case</b></p>
-
-	<hr>
-
-	<p><strong>P.S:</strong> Since you've read &amp; played this all the way, here, have a bonus!
-	A “Sandbox Mode” of the election simulator, with up to <em>five</em> candidates.
-	You can also save &amp; share your very own custom election scenario with others. Happy simulating!</p>
-</div>
-
-
-<!-- - - - - - - - - 
+		<div class="banner">
+			<img src="img/part3.png" />
+		</div>
+		<div class="words">
+			<p>
+				<em>ahem</em>
+			</p>
+			<p style="text-align:center">
+				<strong style="font-size:1.4em">DEAR JUSTIN <a href="http://www.newyorker.com/wp-content/uploads/2016/03/Borowitz-Justin-Trudeau.jpg">“TOTES ADORBZ”</a> TRUDEAU</strong><br>
+				<b style="font-size:0.93em">(and everyone else around the world pushing for voting reform)</b>
+			</p>
+			<p>
+				Thank you for taking this small but powerful first step! We've known for way too long that our current voting system – First
+				Past The Post – forces voters to be dishonest, creates a polarizing &quot;lesser of two evils&quot; scenario, and screws
+				over both major <em>and</em> minor candidates.
+			</p>
+			<p>
+				However, you're probably only considering Instant Runoff Voting. Which, to be fair, <em>is</em> better than than First
+				Past The Post, and if it's a choice between just those two, <em>definitely</em> go for Instant Runoff. But IRV still
+				has a glitch as undemocratic as FPTP's – and worse, in our age of distrust, Instant Runoff's lack of transparency may
+				be deadly for democracy. Yes, sure, IRV was the best voting system we could come up with…
+				<a href="https://en.wikipedia.org/wiki/History_and_use_of_instant-runoff_voting">in 1870</a>. And since then, IRV has
+				dominated the conversation, unwittingly framing the whole voting reform debate as “simple vs expressive”.
+			</p>
+			<p>
+				<b>But that is a false choice.</b> Thanks to computer simulations, real-life studies, and a bunch of math nerds,
+				<b>we now know of voting systems that are both simple <i>and</i> expressive.</b>
+			</p>
+			<p>
+				<i>Personally</i>, I'm leaning towards Score Voting. It's simple, very expressive, and already familiar to anyone who's
+				seen Amazon's or Yelp's “five star” review system. But that's just my humble opinion. You could also make the case that
+				Approval Voting is more <i>practical</i>, because it's even simpler, and would <i>already work with existing voting machines!</i>				All you'd need to do is change the instructions from “vote for the candidate you like” to “vote for the candidate<b class="underline">s</b>				you like”.
+			</p>
+			<p>
+				<em>Or maybe I'm completely wrong about Instant Runoff Voting, and it's actually pretty okay.</em> Heck, you could even
+				go for Borda Count, as a hilarious prank.
+			</p>
+			<p>
+				I won't claim to know which voting system is The Best&trade;. I shall keep open this discussion, just as long as we <em>have</em>				this discussion. For three reasons:
+			</p>
+			<p>
+				1) If I claim one voting system is the best, end of story, all the social-choice-theory nerds will be on my butt, yelling,
+				BUT NICKY WHAT ABOUT <a href="http://www.law.uchicago.edu/faculty/research/eric-posner-quadratic-vote-buying-efficient-corporate-governance/qanda">QUADRATIC VOTE BUYING</a>
+			</p>
+			<p>
+				2) We still need to test these alternative voting systems with <em>actual experience</em>, not just <span style="text-decoration:line-through">annoying internet flame wars between IRV advocates and Score Voting advocates</span>				theory. All the more reason for small towns, local states, and nations like Canada to be <em>pioneers</em>, to bravely
+				experiment!
+			</p>
+			<p>
+				3) Keeping the discussion going is what democracy <em>is</em>.
+			</p>
+			<p>
+				<a href="http://www.journalofdemocracy.org/article/danger-deconsolidation-democratic-disconnect">A recent study</a> found
+				that in many Western countries – from Sweden to Australia to the United States – support for democracy has <em>plummeted</em>				over the last several generations. In 2011, almost <em>a full quarter</em> of young Americans said democracy was a &quot;bad&quot;
+				or &quot;very bad&quot; way to run a country. And <em>today</em>, one in six Americans say it'd be &quot;good&quot; or
+				&quot;very good&quot; to be under <em>actual military rule</em>.
+			</p>
+			<p>
+				Our age of distrust goes a <em>lot</em> deeper than the technical details of a voting system. There isn't gonna be One
+				Weird Trick to fix democracy. But as a first step, a low-hanging fruit, a way to show that, <em>yes</em>, you will make
+				the system respond to the needs and wants and pains and hopes and dreams of your people – well, fixing our voting system's
+				a good start as any.
+			</p>
+			<p>
+				Because, this isn't just about trying to build a better ballot.
+			</p>
+			<p>
+				This is about trying to build a better <em>democracy</em>.
+			</p>
+			<p>
+				<strong>&lt;3,</strong><br>
+				<b>~ Nicky Case</b>
+			</p>
+			<hr>
+			<p>
+				<strong>P.S:</strong> Since you've read &amp; played this all the way, here, have a bonus! A “Sandbox Mode” of the election
+				simulator, with up to <em>five</em> candidates. You can also save &amp; share your very own custom election scenario
+				with others. Happy simulating!
+			</p>
+		</div>
+		<!-- - - - - - - - - 
 
 PART IV:
 SANDBOX
 
 - - - - - - - - - -->
-
-<div id="sandbox">
-	<div class="sim-sandbox">
-		<h1 class="caption-test" style="margin: 30px 0 15px 0;">SANDBOX MODE! <a href="sandbox">(link to <em>just</em> this)</a></h1>
-		<iframe src="sandbox/sandbox.html" width="802" height="508" scrolling="no"></iframe>
-	</div>
-	<div class="words">
-		<p>
-		One hope for Sandbox Mode is that readers can debate with me and each other <em>using</em> this tool!
-		Not just telling me I'm wrong, but <em>showing</em> me I'm wrong.
-		For example –
-		<a href="sandbox?m=%7B%22s%22%3A%22FPTP%22%2C%22v%22%3A%5B%5B54%2C147%5D%2C%5B54%2C72%5D%2C%5B249%2C109%5D%5D%2C%22c%22%3A%5B%5B54%2C227%5D%2C%5B249%2C106%5D%5D%2C%22d%22%3A%22This%20is%20the%20biggest%20challenge%20to%20Approval%2FScore%2C%20IMHO.%20Below%3A%202%2F3%20of%20voters%20dislike%20both%20candidates%2C%20but%20dislike%20Square%20slightly%20less.%20However%2C%201%2F3%20of%20voters%20LOVE%20Triangle%20and%20HATE%20Square.%20Under%20FPTP%2C%20IRV%20%26%20Condorcet%2C%20Square%20wins%2C%20coz%20a%20majority%20of%20voters%20barely%20prefer%20him.%20But%20under%20Approval%20%26%20Score%2C%20Triangle%20wins%2C%20coz%20she's%20intensely%20loved%20by%20her%20minority.%20Now%2C%20is%20this%20OKAY%3F%20Is%20this%20a%20betrayal%20of%20democracy%2C%20or%20actually%20*saving*%20democracy%20from%20a%20tyranny%20of%20the%20majority%3F%20This%20question's%20not%20just%20theoretical%2C%20it's%20*philosophical*.%22%7D">
+		<div id="sandbox">
+			<div class="sim-sandbox">
+				<h1 class="caption-test" style="margin: 30px 0 15px 0;">SANDBOX MODE! <a href="sandbox">(link to <em>just</em> this)</a></h1>
+				<iframe src="sandbox/sandbox.html" width="802" height="508" scrolling="no"></iframe>
+			</div>
+			<div class="words">
+				<p>
+					One hope for Sandbox Mode is that readers can debate with me and each other <em>using</em> this tool! Not just telling
+					me I'm wrong, but <em>showing</em> me I'm wrong. For example –
+					<a href="sandbox?m=%7B%22s%22%3A%22FPTP%22%2C%22v%22%3A%5B%5B54%2C147%5D%2C%5B54%2C72%5D%2C%5B249%2C109%5D%5D%2C%22c%22%3A%5B%5B54%2C227%5D%2C%5B249%2C106%5D%5D%2C%22d%22%3A%22This%20is%20the%20biggest%20challenge%20to%20Approval%2FScore%2C%20IMHO.%20Below%3A%202%2F3%20of%20voters%20dislike%20both%20candidates%2C%20but%20dislike%20Square%20slightly%20less.%20However%2C%201%2F3%20of%20voters%20LOVE%20Triangle%20and%20HATE%20Square.%20Under%20FPTP%2C%20IRV%20%26%20Condorcet%2C%20Square%20wins%2C%20coz%20a%20majority%20of%20voters%20barely%20prefer%20him.%20But%20under%20Approval%20%26%20Score%2C%20Triangle%20wins%2C%20coz%20she's%20intensely%20loved%20by%20her%20minority.%20Now%2C%20is%20this%20OKAY%3F%20Is%20this%20a%20betrayal%20of%20democracy%2C%20or%20actually%20*saving*%20democracy%20from%20a%20tyranny%20of%20the%20majority%3F%20This%20question's%20not%20just%20theoretical%2C%20it's%20*philosophical*.%22%7D">
 		here's a model I made in Sandbox Mode,
-		showing an interesting argument <em>against</em> Approval &amp; Score Voting</a>.
-		Granted, this tool is very limited – it doesn't handle strategic voting or imperfect information –
-		but I think it's a start, and may help improve our Democratic Discourse&trade;
-		</p>
-	</div>
-</div>
-
-<!-- - - - - - - - - 
+		showing an interesting argument <em>against</em> Approval &amp; Score Voting</a>. Granted, this tool is very limited
+					– it doesn't handle strategic voting or imperfect information – but I think it's a start, and may help improve our Democratic
+					Discourse&trade;
+				</p>
+			</div>
+		</div>
+		<!-- - - - - - - - - 
 
 PART V: THE END
 - What Can I Do?
@@ -572,319 +585,204 @@ PART V: THE END
 - Stay In Touch
 
 - - - - - - - - - -->
-
-<div id="end">
-	<div id="credits">
-
-		<!-- Public Domain -->
-		<div id="uncopyright">
-			<img src="img/public_domain.png" width="180">
-			<div style="float:right; width:750px; font-size:20px; color:#999;">
-				<div style="font-size:93px; height:97px; color:#fff; position: relative; left: -5px; line-height: 1em;"><b>PUBLIC DOMAIN</b></div>
-				<a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="license" target="_blank">Zero rights reserved.</a>
-				I'm giving away
-				all my art/code/words,
-				so that you
-				teachers, mathematicians, hobbyists, activists, and policy wonks
-				can use them however you like!
-				This is for you.
-				<a href="https://github.com/ncase/ballot" target="_blank">Get my source code on GitHub!</a>
-			</div>
-		</div>
-
-		<div id="appendix_container">
-
-			<!-- Further Reading -->
-			<div id="further_reading">
-				
-				<div class="appendix_title" style="font-size:50px; line-height:50px">“BUT WHAT CAN <em>I</em> DO?”</div>
-				
-				<p>
-				<b>For citizens:</b> Remember, <i>think global, but act local</i>.
-				Change from the bottom-up lasts longer.
-				If you're in the US,
-				<a href="http://www.house.gov/representatives/find/">find your representative</a>
-				and badger 'em.
-				If you're in Canada,
-				<a href="http://www.lop.parl.gc.ca/ParlInfo/compilations/houseofcommons/memberbypostalcode.aspx">find your Member of Parliament</a>
-				and badger 'em.
-				Also if you're Canadian,
-				<a href="https://www.mydemocracy.ca/">fill out the MyDemocracy.ca survey before the end of 2016!</a> 
-				This survey has a few questions specifically about voting reform!
-				(sadly, the question is <i>still</i> framed as "simple vs expressive".
-				<i>that</i> is why i've been so gung-ho about Approval &amp; Score,
-				and maybe a bit too mean towards IRV)
-				</p>
-
-				<p>
-				<b>For learners:</b>
-				Watch CGP Grey's <a href="https://www.youtube.com/playlist?list=PL7679C7ACE93A5638"><i>Politics in the Animal Kingdom</i></a> series!
-				It's charming, and covers more ground than I did here – it explains
-				gerrymandering, proportional representation, and more.
-				Also, read <a href="https://www.amazon.com/Gaming-Vote-Elections-Arent-About/dp/0809048922"><i>Gaming The Vote</i></a> by
-				William Poundstone.
-				It's a thrilling read,
-				with dramatic human stories of crooks &amp; conmen trying to game our glitchy voting systems –
-				and sometimes, succeeding.
-				</p>
-
-				<p>
-				<b>For teachers:</b>
-				This entire "explorable explanation" is public domain, copyright-free,
-				meaning you <i>already</i> have permission to use this freely in your classes!
-				You can even use the <a href="sandbox">Sandbox Mode</a> to create your own material,
-				or as a tool for students to make something on their own.
-				</p>
-
-				<p>
-				<b>For coders:</b>
-				This is all open source!
-				So you can <a href="https://github.com/ncase/ballot">get my code on GitHub</a>, and remix it to your heart's content.
-				(sorry in advance for my messy code)
-				</p>
-
-				<p>
-				<b>Check out these organizations:</b>
-				Though they may differ on what voting system they like best,
-				they all have a common goal: to reform the one we have.
-				<a href="https://electology.org/">Electology</a> likes Approval Voting most,
-				<a href="http://www.fairvote.org/">FairVote</a> likes Instant Runoff most,
-				and <a href="http://rangevoting.org/">RangeVoting.org</a> likes Score Voting most.
-				</p>
-
-				<div class="appendix_title" style="font-size:36px; line-height:50px; margin-top:35px;">ON THE SHOULDERS OF GIANTS</div>
-				<p>
-				This "explorable explanation" was directly inspired by these two projects:
-				</p>
-				<img src="img/zesty.png" style="width:100%"/>
-				<p>
-				<a href="http://zesty.ca/voting/sim/">Voting Sim Visualization</a> by Ka-Ping Yee (2005)
-				was a real eye-opener.
-				(hat tip to <a href="https://twitter.com/worrydream/status/781324328054951936">Bret Victor</a> for sharing it with me!)
-				I've heard lots of written debate over FPTP vs IRV vs Condorcet vs Approval vs blah blah blah,
-				but I'd never seen their difference <i>visualized</i> so clearly!
-				It gave me instant insight.
-				And it actually changed my mind – I used to think IRV was pretty good,
-				but after seeing IRV's <i>messiness</i> (as shown above), I realized it's actually kinda stinky cheese.
-				</p>
-				<p>
-				However, even <i>this</i> brilliant visualization was still too abstract.
-				And since it wasn't interactive, I couldn't test the many questions &amp; scenarios that came to mind.
-				So that's why my second inspiration was…
-				</p>
-				<img src="img/ladder.png" style="width:100%"/>
-				<p>
-				<a href="http://worrydream.com/LadderOfAbstraction/">Up and Down the Ladder of Abstraction</a>
-				by Bret Victor (2011).
-				It's one of the web's earliest "explorable explanations" (also a term Bret coined)
-				and it is <i>gorgeous</i>.
-				Obviously, I borrowed the format of mixing words &amp; "games" to explain things,
-				but I also followed the formula of starting concrete – one voter –
-				then moving up to the more abstract – a whole election. 
-				</p>
-				<p>
-				<a href="http://explorableexplanations.com/">
+		<div id="end">
+			<div id="credits">
+				<!-- Public Domain -->
+				<div id="uncopyright">
+					<img src="img/public_domain.png" width="180">
+					<div style="float:right; width:750px; font-size:20px; color:#999;">
+						<div style="font-size:93px; height:97px; color:#fff; position: relative; left: -5px; line-height: 1em;"><b>PUBLIC DOMAIN</b></div>
+						<a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="license" target="_blank">Zero rights reserved.</a>						I'm giving away all my art/code/words, so that you teachers, mathematicians, hobbyists, activists, and policy wonks
+						can use them however you like! This is for you.
+						<a href="https://github.com/ncase/ballot" target="_blank">Get my source code on GitHub!</a>
+					</div>
+				</div>
+				<div id="appendix_container">
+					<!-- Further Reading -->
+					<div id="further_reading">
+						<div class="appendix_title" style="font-size:50px; line-height:50px">“BUT WHAT CAN <em>I</em> DO?”</div>
+						<p>
+							<b>For citizens:</b> Remember, <i>think global, but act local</i>. Change from the bottom-up lasts longer. If you're
+							in the US,
+							<a href="http://www.house.gov/representatives/find/">find your representative</a> and badger 'em. If you're in Canada,
+							<a href="http://www.lop.parl.gc.ca/ParlInfo/compilations/houseofcommons/memberbypostalcode.aspx">find your Member of Parliament</a>							and badger 'em. Also if you're Canadian,
+							<a href="https://www.mydemocracy.ca/">fill out the MyDemocracy.ca survey before the end of 2016!</a> This survey has
+							a few questions specifically about voting reform! (sadly, the question is <i>still</i> framed as "simple vs expressive".
+							<i>that</i> is why i've been so gung-ho about Approval &amp; Score, and maybe a bit too mean towards IRV)
+						</p>
+						<p>
+							<b>For learners:</b> Watch CGP Grey's <a href="https://www.youtube.com/playlist?list=PL7679C7ACE93A5638"><i>Politics in the Animal Kingdom</i></a>							series! It's charming, and covers more ground than I did here – it explains gerrymandering, proportional representation,
+							and more. Also, read <a href="https://www.amazon.com/Gaming-Vote-Elections-Arent-About/dp/0809048922"><i>Gaming The Vote</i></a>							by William Poundstone. It's a thrilling read, with dramatic human stories of crooks &amp; conmen trying to game our
+							glitchy voting systems – and sometimes, succeeding.
+						</p>
+						<p>
+							<b>For teachers:</b> This entire "explorable explanation" is public domain, copyright-free, meaning you <i>already</i>							have permission to use this freely in your classes! You can even use the <a href="sandbox">Sandbox Mode</a> to create
+							your own material, or as a tool for students to make something on their own.
+						</p>
+						<p>
+							<b>For coders:</b> This is all open source! So you can <a href="https://github.com/ncase/ballot">get my code on GitHub</a>,
+							and remix it to your heart's content. (sorry in advance for my messy code)
+						</p>
+						<p>
+							<b>Check out these organizations:</b> Though they may differ on what voting system they like best, they all have a
+							common goal: to reform the one we have.
+							<a href="https://electology.org/">Electology</a> likes Approval Voting most,
+							<a href="http://www.fairvote.org/">FairVote</a> likes Instant Runoff most, and <a href="http://rangevoting.org/">RangeVoting.org</a>							likes Score Voting most.
+						</p>
+						<div class="appendix_title" style="font-size:36px; line-height:50px; margin-top:35px;">ON THE SHOULDERS OF GIANTS</div>
+						<p>
+							This "explorable explanation" was directly inspired by these two projects:
+						</p>
+						<img src="img/zesty.png" style="width:100%" />
+						<p>
+							<a href="http://zesty.ca/voting/sim/">Voting Sim Visualization</a> by Ka-Ping Yee (2005) was a real eye-opener. (hat
+							tip to <a href="https://twitter.com/worrydream/status/781324328054951936">Bret Victor</a> for sharing it with me!)
+							I've heard lots of written debate over FPTP vs IRV vs Condorcet vs Approval vs blah blah blah, but I'd never seen
+							their difference <i>visualized</i> so clearly! It gave me instant insight. And it actually changed my mind – I used
+							to think IRV was pretty good, but after seeing IRV's <i>messiness</i> (as shown above), I realized it's actually kinda
+							stinky cheese.
+						</p>
+						<p>
+							However, even <i>this</i> brilliant visualization was still too abstract. And since it wasn't interactive, I couldn't
+							test the many questions &amp; scenarios that came to mind. So that's why my second inspiration was…
+						</p>
+						<img src="img/ladder.png" style="width:100%" />
+						<p>
+							<a href="http://worrydream.com/LadderOfAbstraction/">Up and Down the Ladder of Abstraction</a> by Bret Victor (2011).
+							It's one of the web's earliest "explorable explanations" (also a term Bret coined) and it is <i>gorgeous</i>. Obviously,
+							I borrowed the format of mixing words &amp; "games" to explain things, but I also followed the formula of starting
+							concrete – one voter – then moving up to the more abstract – a whole election.
+						</p>
+						<p>
+							<a href="http://explorableexplanations.com/">
 				You can learn more about Explorable Explanations here.</a>
-				</p>
-				<p>
-				And last but not least, thank you to all the math &amp; policy nerds
-				who spent way too much time thinking about all this.
-				</p>
-
-				<div class="appendix_title" style="font-size:47px; line-height:50px; margin-top:35px;">
-				STAY IN TOUCH, MAYBE?</div>
-				<p>
-				Every once in a while, I'll fall into an endless rabbithole –
-				like this one on voting systems – and slowly crawl my way out, bloodied and bruised,
-				with a new interactive thing for you!
-				If you wanna find out 
-				when I finally get around to making new shtuff, you can…
-				</p>
-				<ul>
+						</p>
+						<p>
+							And last but not least, thank you to all the math &amp; policy nerds who spent way too much time thinking about all this.
+						</p>
+						<div class="appendix_title" style="font-size:47px; line-height:50px; margin-top:35px;">
+							STAY IN TOUCH, MAYBE?</div>
+						<p>
+							Every once in a while, I'll fall into an endless rabbithole – like this one on voting systems – and slowly crawl my way out,
+							bloodied and bruised, with a new interactive thing for you! If you wanna find out when I finally get around to making
+							new shtuff, you can…
+						</p>
+						<ul>
+							<li>
+								<a href="https://twitter.com/ncasenmare">Follow me on Twitter</a>
+							</li>
+							<li>
+								<a href="https://www.patreon.com/ncase">Buy me a hot chocolate via Patreon</a>
+							</li>
+							<li>
+								<a href="http://us11.campaign-archive2.com/home/?u=07d288de26e77b8126d33e2d6&id=5c3178c4cb">I also have a mailing list???</a>
+							</li>
+						</ul>
+						<p>
+							And if you wanna see more of my past projects,
+							<a href="http://ncase.me/">check out my wobsite!</a>
+						</p>
+						<p>
+							See you again soon! Have a Happy New Year 2017, or try to, anyway.
+						</p>
+					</div>
+					<!-- Supporters and Special Thanks -->
+					<div id="supporters">
+						<div class="appendix_title" style="text-align:center; height:22px">A BIG THANKS TO ALL MY</div>
+						<div class="appendix_title" style="text-align:center; font-size: 46px; margin: 10px 0 15px 0;">SUPPORTERS</div>
+						<a href="https://www.patreon.com/ncase" target="_blank">
+							<img src="img/patreon.png" width="320">
+						</a>
+						<div id="supporter_drawings">
+							<div><img src="rewards/aimee.png">
+								<div>aimee jarboe</div>
+							</div>
+							<div><img src="rewards/frank.png">
+								<div>frank leon rose</div>
+							</div>
+							<div><img src="rewards/jared.png">
+								<div>jared cosulich</div>
+							</div>
+							<div><img src="rewards/louis_jean.png">
+								<div>louis-jean teitelbaum</div>
+							</div>
+							<div><img src="rewards/matt.png">
+								<div>matt hughes</div>
+							</div>
+							<div><img src="rewards/micah.png">
+								<div>micah cowan</div>
+							</div>
+							<div><img src="rewards/michael.png">
+								<div>michael alan huff</div>
+							</div>
+							<div><img src="rewards/natalie.png">
+								<div>natalie sun</div>
+							</div>
+							<div><img src="rewards/noel.png">
+								<div>noel lehmann</div>
+							</div>
+							<div><img src="rewards/phil.png">
+								<div>phil dougherty</div>
+							</div>
+							<div><img src="rewards/tom_c.png">
+								<div>tom cascio</div>
+							</div>
+							<div><img src="rewards/tom_k.png">
+								<div>tom knowles</div>
+							</div>
+						</div>
+						<div style="overflow:hidden; clear:both">
+							<div style="margin-bottom:25px; text-align:center; overflow:hidden;">
+								<div style="width:160px; float:left">
+									Adam M. Smith<br> Alex Dytrych<br> Andrew <br> Andy <br> Artemiy Solopov<br> Aschelon <br> ben fei<br> Benjamin
+									Riggs
+									<br> Bob Wise<br> Brandon <br> Brent Werness<br> Brian Wu<br> Bruno Guerrero<br> Buster Benson<br> Casey Ross<br>									Charlie McIlwain<br> Christopher <br> Colin <br> Colin <br> Cort Stratton<br> Craig Steele<br> Daniel Horowitz<br>									Daniel Shiffman<br> Dave Tu<br> David Smit<br> Dylan Meconis<br> Fahrstuhl <br> Feiya Wang<br> Forrest Oliphant<br>									Frank Leon Rose<br> Henry Reich<br> Iñaki <br> J. Hu<br> Jacob Christian Munch-Andersen<br> Jacques Frechet<br>									James Hogan<br> Janusz Leidgens<br> John_Ca <br> Johnny Owens<br> Joseph Perry<br> Joshua Horowitz<br> Julia Karmo<br>									Karen Cooper<br> Kat Suricata<br> Kate Fractal<br> Kathryn Long<br> Kevin <br> Kevin Wang<br>
+								</div>
+								<div style="width:160px; float:left">
+									Klemen Slavic<br> kuerqing1024 <br> Linda Booth Sweeney<br> Maic Lopez Saenz<br> Matt "Kupo" Roszak<br> Matt Warren<br>									May-Li Khoe<br> Mekki MacAulay<br> Micah Cowan<br> Michael Duke<br> Michelle Brown<br> Michelle Kelly<br> Milan
+									Pingel
+									<br> Monika Denes<br> Mustafa Alic<br> Nick Schrag<br> Nikita
+									<br> Noah Swartz<br> Pablo Lopez Soriano<br> Pat Mächler<br> Peter McEvoy<br> Philip Tibitoski<br> Piotr Migdal<br>									Rachel Nabors<br> Raphael D'Amico<br> Richard Hackathorn<br> Rob Napier<br> Roland Tanglao<br> Ryan Barker<br> Sam
+									Anderson
+									<br> Sam Maynard<br> Samira Nedungadi<br> Sarah Barbour<br> sarah mathys<br> SB Sigma<br> Seanny123 <br> Serguei
+									Filimonov
+									<br> Sigpipe <br> Sylvain Francis<br> Syria Carys Sirlay<br> T_Caramel <br> TisGood <br> Tony Onodi<br> Traci Lawson<br>									Yona <br> Yu-Han Kuo<br> Zach Smith<br> Zoe Bogner
+								</div>
+							</div>
+						</div>
+						<div class="appendix_title" style="text-align:center;">AND SPECIAL THANKS TO</div>
+						<div style="margin-top:15px; text-align:center;">
+							<div style="width:160px; float:left">
+								Alex Dytrych<br> Alex Jaffe<br> Brian Bucklew<br> Chris Walker<br> Christine Zhang<br> Dan Zajdband<br> Daniel Cook<br>								Droqen
+								<br> Jason Grinblat<br>
+							</div>
+							<div style="width:160px; float:left">
+								Jessie Salz<br> Lisa Charlotte Rost<br> Martin Shelton<br> Patrick Dubroy<br> Pietro Passarelli<br> Sandhya Kambhampati<br>								Tanya Short <br>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div style="text-align:center; color:#fff;">
+				sharing is caring!
+				<ul class="share-buttons">
 					<li>
-					<a href="https://twitter.com/ncasenmare">Follow me on Twitter</a>
+						<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fncase.me%2Fballot%2F&t=To%20Build%20a%20Better%20Ballot"
+						    title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="social/Facebook.png"></a>
 					</li>
 					<li>
-					<a href="https://www.patreon.com/ncase">Buy me a hot chocolate via Patreon</a>
+						<a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fncase.me%2Fballot%2F&text=Woah%2C%20check%20out%20this%20interactive%20guide%20to%20alternative%20voting%20systems!%20To%20Build%20a%20Better%20Ballot%3A%20http%3A%2F%2Fncase.me%2Fballot%2F&via=ncasenmare"
+						    target="_blank" title="Tweet"><img alt="Tweet" src="social/Twitter.png"></a>
 					</li>
 					<li>
-					<a href="http://us11.campaign-archive2.com/home/?u=07d288de26e77b8126d33e2d6&id=5c3178c4cb">I also have a mailing list???</a>
+						<a href="mailto:?subject=To%20Build%20a%20Better%20Ballot&body=An%20interactive%20guide%20to%20alternative%20voting%20systems:%20http%3A%2F%2Fncase.me%2Fballot%2F"
+						    target="_blank" title="Send email"><img alt="Send email" src="social/Email.png"></a>
 					</li>
 				</ul>
-				<p>
-				And if you wanna see more of my past projects,
-				<a href="http://ncase.me/">check out my wobsite!</a>
-				</p>
-				<p>
-				See you again soon! Have a Happy New Year 2017, or try to, anyway.
-				</p>				
-
-			</div>
-
-			<!-- Supporters and Special Thanks -->
-			<div id="supporters">
-				<div class="appendix_title" style="text-align:center; height:22px">A BIG THANKS TO ALL MY</div>
-				<div class="appendix_title" style="text-align:center; font-size: 46px; margin: 10px 0 15px 0;">SUPPORTERS</div>
-				<a href="https://www.patreon.com/ncase" target="_blank">
-					<img src="img/patreon.png" width="320">
-				</a>
-				<div id="supporter_drawings">
-					<div><img src="rewards/aimee.png"><div>aimee jarboe</div></div>
-					<div><img src="rewards/frank.png"><div>frank leon rose</div></div>
-					<div><img src="rewards/jared.png"><div>jared cosulich</div></div>
-					<div><img src="rewards/louis_jean.png"><div>louis-jean teitelbaum</div></div>
-					<div><img src="rewards/matt.png"><div>matt hughes</div></div>
-					<div><img src="rewards/micah.png"><div>micah cowan</div></div>
-					<div><img src="rewards/michael.png"><div>michael alan huff</div></div>
-					<div><img src="rewards/natalie.png"><div>natalie sun</div></div>
-					<div><img src="rewards/noel.png"><div>noel lehmann</div></div>
-					<div><img src="rewards/phil.png"><div>phil dougherty</div></div>
-					<div><img src="rewards/tom_c.png"><div>tom cascio</div></div>
-					<div><img src="rewards/tom_k.png"><div>tom knowles</div></div>
-				</div>
-				<div style="overflow:hidden; clear:both">
-					<div style="margin-bottom:25px; text-align:center; overflow:hidden;">
-						<div style="width:160px; float:left">
-							Adam M. Smith<br>
-							Alex Dytrych<br>
-							Andrew <br>
-							Andy <br>
-							Artemiy Solopov<br>
-							Aschelon <br>
-							ben fei<br>
-							Benjamin Riggs<br>
-							Bob Wise<br>
-							Brandon <br>
-							Brent Werness<br>
-							Brian Wu<br>
-							Bruno Guerrero<br>
-							Buster Benson<br>
-							Casey Ross<br>
-							Charlie McIlwain<br>
-							Christopher <br>
-							Colin <br>
-							Colin <br>
-							Cort Stratton<br>
-							Craig Steele<br>
-							Daniel Horowitz<br>
-							Daniel Shiffman<br>
-							Dave Tu<br>
-							David Smit<br>
-							Dylan Meconis<br>
-							Fahrstuhl <br>
-							Feiya Wang<br>
-							Forrest Oliphant<br>
-							Frank Leon Rose<br>
-							Henry Reich<br>
-							Iñaki <br>
-							J. Hu<br>
-							Jacob Christian Munch-Andersen<br>
-							Jacques Frechet<br>
-							James Hogan<br>
-							Janusz Leidgens<br>
-							John_Ca <br>
-							Johnny Owens<br>
-							Joseph Perry<br>
-							Joshua Horowitz<br>
-							Julia Karmo<br>
-							Karen Cooper<br>
-							Kat Suricata<br>
-							Kate Fractal<br>
-							Kathryn Long<br>
-							Kevin <br>
-							Kevin Wang<br>
-						</div>
-						<div style="width:160px; float:left">
-							Klemen Slavic<br>
-							kuerqing1024 <br>
-							Linda Booth Sweeney<br>
-							Maic Lopez Saenz<br>
-							Matt "Kupo" Roszak<br>
-							Matt Warren<br>
-							May-Li Khoe<br>
-							Mekki MacAulay<br>
-							Micah Cowan<br>
-							Michael Duke<br>
-							Michelle Brown<br>
-							Michelle Kelly<br>
-							Milan Pingel<br>
-							Monika Denes<br>
-							Mustafa Alic<br>
-							Nick Schrag<br>
-							Nikita<br>
-							Noah Swartz<br>
-							Pablo Lopez Soriano<br>
-							Pat Mächler<br>
-							Peter McEvoy<br>
-							Philip Tibitoski<br>
-							Piotr Migdal<br>
-							Rachel Nabors<br>
-							Raphael D'Amico<br>
-							Richard Hackathorn<br>
-							Rob Napier<br>
-							Roland Tanglao<br>
-							Ryan Barker<br>
-							Sam Anderson<br>
-							Sam Maynard<br>
-							Samira Nedungadi<br>
-							Sarah Barbour<br>
-							sarah mathys<br>
-							SB Sigma<br>
-							Seanny123 <br>
-							Serguei Filimonov<br>
-							Sigpipe <br>
-							Sylvain Francis<br>
-							Syria Carys Sirlay<br>
-							T_Caramel <br>
-							TisGood <br>
-							Tony Onodi<br>
-							Traci Lawson<br>
-							Yona <br>
-							Yu-Han Kuo<br>
-							Zach Smith<br>
-							Zoe Bogner
-						</div>
-					</div>
-				</div>
-				<div class="appendix_title" style="text-align:center;">AND SPECIAL THANKS TO</div>
-				<div style="margin-top:15px; text-align:center;">
-					<div style="width:160px; float:left">
-						Alex Dytrych<br>
-						Alex Jaffe<br>
-						Brian Bucklew<br>
-						Chris Walker<br>
-						Christine Zhang<br>
-						Dan Zajdband<br>
-						Daniel Cook<br>
-						Droqen<br>
-						Jason Grinblat<br>
-					</div>
-					<div style="width:160px; float:left">
-						Jessie Salz<br>
-						Lisa Charlotte Rost<br>
-						Martin Shelton<br>
-						Patrick Dubroy<br>
-						Pietro Passarelli<br>
-						Sandhya Kambhampati<br>
-						Tanya Short <br>
-					</div>
-				</div>
 			</div>
 		</div>
-		
 	</div>
-	<div style="text-align:center; color:#fff;">
-	sharing is caring!
-	<ul class="share-buttons">
-		<li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fncase.me%2Fballot%2F&t=To%20Build%20a%20Better%20Ballot" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="social/Facebook.png"></a></li>
-		<li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fncase.me%2Fballot%2F&text=Woah%2C%20check%20out%20this%20interactive%20guide%20to%20alternative%20voting%20systems!%20To%20Build%20a%20Better%20Ballot%3A%20http%3A%2F%2Fncase.me%2Fballot%2F&via=ncasenmare" target="_blank" title="Tweet"><img alt="Tweet" src="social/Twitter.png"></a></li>
-		<li><a href="mailto:?subject=To%20Build%20a%20Better%20Ballot&body=An%20interactive%20guide%20to%20alternative%20voting%20systems:%20http%3A%2F%2Fncase.me%2Fballot%2F" target="_blank" title="Send email"><img alt="Send email" src="social/Email.png"></a></li>
-	</ul>
-	</div>
-</div>
-
-</div>
-
 </body>
 <script src="js/index.js"></script>
+
 </html>
