@@ -162,7 +162,7 @@ function main(config){
 			{name:"Borda", voter:RankedVoter, election:Election.borda, margin:4, content:"<abbr title=\"Méthode de Borda\">Borda</abbr>"},
 			{name:"Condorcet", voter:RankedVoter, election:Election.condorcet, content:"<abbr title=\"Méthode de Condorcet\">Condorcet</abbr>"},
 			{name:"Approbation", voter:ApprovalVoter, election:Election.approval, margin:4, content:"<abbr title=\"Vote par Approbation\">Approbation</abbr>"},
-			{name:"JM", voter:ScoreVoter, election:Election.score, content:"<abbr title=\"Jugement Majoritaire\">JM</abbr>"}
+			{name:"Valeurs", voter:ScoreVoter, election:Election.score, content:"<abbr title=\"Vote par Valeurs\">Valeurs</abbr>"}
 		];
 		var onChooseSystem = function(data){
 
