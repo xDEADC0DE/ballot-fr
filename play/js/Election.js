@@ -38,7 +38,7 @@ Election.score = function(model, options){
 			text += "score de "+_icon(c)+"&nbsp;: "+(tally[c].toFixed(2))+" sur 5.00<br>";
 		}
 		text += "<br>";
-		text += _icon(winner)+" a le meilleur score, donc...<br>";
+		text += _icon(winner)+" a le meilleur score, donc…<br>";
 		text += "</span>";
 		text += "<br>";
 		text += "<b style='color:"+color+"'>"+_translation(winner).toUpperCase()+"</b> GAGNE";
@@ -75,7 +75,7 @@ Election.approval = function(model, options){
 			text += _icon(c)+" obtient "+tally[c]+" approbations<br>";
 		}
 		text += "<br>";
-		text += _icon(winner)+" a le plus d'approbations, donc...<br>";
+		text += _icon(winner)+" a le plus d'approbations, donc…<br>";
 		text += "</span>";
 		text += "<br>";
 		text += "<b style='color:"+color+"'>"+_translation(winner).toUpperCase()+"</b> GAGNE";
@@ -193,7 +193,7 @@ Election.borda = function(model, options){
 			text += "score total de " + _icon(c)+"&nbsp;: "+tally[c]+"<br>";
 		}
 		text += "<br>";
-		text += _icon(winner)+" a le <i>plus petit</i> score, donc...<br>";
+		text += _icon(winner)+" a le <i>plus petit</i> score, donc…<br>";
 		text += "</span>";
 		text += "<br>";
 		text += "<b style='color:"+color+"'>"+_translation(winner).toUpperCase()+"</b> GAGNE";
@@ -218,7 +218,11 @@ Election.irv = function(model, options){
 
 	while(!finalWinner){
 
-		text += "<b>round "+roundNum+"&nbsp;:</b><br>";
+		var numeral = "e";
+		if(roundNum == 1) {
+			numeral = "er";
+		}
+		text += "<b>"+roundNum+numeral+" tour&nbsp;:</b><br>";
 
 		// Tally the approvals & get winner!
 		var pre_tally = _tally(model, function(tally, ballot){
@@ -246,14 +250,14 @@ Election.irv = function(model, options){
 		var ratio = tally[winner]/model.getTotalVoters();
 		if(ratio>=0.5){
 			finalWinner = winner;
-			text += _icon(winner)+" a plus de 50&nbsp;%<br>";
+			text += _icon(winner)+" a plus de 50&#8239;%<br>";
 			break;
 		}
 
 		// Otherwise... runoff...
 		var loser = _countLoser(tally);
-		text += "personne n'a plus de 50&nbsp;%. ";
-		text += "on retire le perdant, "+_icon(loser)+".<br>round suivant&nbsp;!<br><br>";
+		text += "personne n'a plus de 50&#8239;%. ";
+		text += "on retire le perdant, "+_icon(loser)+".<br>tour suivant&nbsp;!<br><br>";
 
 		// ACTUALLY ELIMINATE
 		candidates.splice(candidates.indexOf(loser), 1); // remove from candidates...
@@ -307,7 +311,7 @@ Election.plurality = function(model, options){
 	}
 	if(options.sidebar){
 		text += "<br>";
-		text += _icon(winner)+" a le plus de voix, donc...<br>";
+		text += _icon(winner)+" a le plus de voix, donc…<br>";
 	}
 	text += "</span>";
 	text += "<br>";

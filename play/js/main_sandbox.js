@@ -43,7 +43,7 @@ function main(config){
 
 	// Defaults...
 	config = config || {};
-	config.system = config.system || "FPTP";
+	config.system = config.system || "SUM";
 	config.candidates = config.candidates || 3;
 	config.voters = config.voters || 1;
 	config.features = config.features || 1; // 1-basic, 2-voters, 3-candidates, 4-save
@@ -157,12 +157,12 @@ function main(config){
 
 		// Which voting system?
 		var votingSystems = [
-			{name:"FPTP", voter:PluralityVoter, election:Election.plurality, margin:4},
-			{name:"IRV", voter:RankedVoter, election:Election.irv},
-			{name:"Borda", voter:RankedVoter, election:Election.borda, margin:4},
-			{name:"Condorcet", voter:RankedVoter, election:Election.condorcet},
-			{name:"Approval", voter:ApprovalVoter, election:Election.approval, margin:4},
-			{name:"Score", voter:ScoreVoter, election:Election.score}
+			{name:"SUM", voter:PluralityVoter, election:Election.plurality, margin:4, content:"<abbr title=\"Scrutin Uninominal Majoritaire\">SUM</abbr>"},
+			{name:"VA", voter:RankedVoter, election:Election.irv, content:"<abbr title=\"Vote alternatif\">VA</abbr>"},
+			{name:"Borda", voter:RankedVoter, election:Election.borda, margin:4, content:"<abbr title=\"Méthode de Borda\">Borda</abbr>"},
+			{name:"Condorcet", voter:RankedVoter, election:Election.condorcet, content:"<abbr title=\"Méthode de Condorcet\">Condorcet</abbr>"},
+			{name:"Approbation", voter:ApprovalVoter, election:Election.approval, margin:4, content:"<abbr title=\"Vote par Approbation\">Approbation</abbr>"},
+			{name:"Valeurs", voter:ScoreVoter, election:Election.score, content:"<abbr title=\"Vote par Valeurs\">Valeurs</abbr>"}
 		];
 		var onChooseSystem = function(data){
 
@@ -275,9 +275,9 @@ function main(config){
 		// CREATE A RESET BUTTON
 		var resetDOM = document.createElement("div");
 		resetDOM.id = "reset";
-		resetDOM.innerHTML = "RAZ";
+		resetDOM.innerHTML = "réinitialiser";
 		resetDOM.style.top = "340px";
-		resetDOM.style.left = "350px";
+		resetDOM.style.left = "300px";
 		resetDOM.onclick = function(){
 			
 			config = JSON.parse(JSON.stringify(initialConfig)); // RESTORE IT!
@@ -363,7 +363,7 @@ function main(config){
 			saveDOM.id = "save";
 			saveDOM.innerHTML = "enreg. :";
 			saveDOM.style.top = "470px";
-			saveDOM.style.left = "120px";
+			saveDOM.style.left = "210px";
 			saveDOM.onclick = function(){
 				_saveModel();
 			};
