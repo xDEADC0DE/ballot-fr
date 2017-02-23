@@ -431,12 +431,32 @@ function main(config){
 		};
 
 		// Put it in the save link box!
-		var link = "http://ncase.me/ballot/sandbox?m="+uri;
+
+		var link = "http://"+getDomain(window.location.href, true)+"/sandbox?m="+uri;
 		var savelink = document.getElementById("savelink");
 		savelink.value = "sauvegarde...";
 		setTimeout(function(){
 			savelink.value = link;
 		},750);
+
+		function getDomain(url, subdomain) {
+			subdomain = subdomain || false;
+
+			url = url.replace(/(https?:\/\/)?(www.)?/i, '');
+
+			if (!subdomain) {
+				url = url.split('.');
+
+				url = url.slice(url.length - 2).join('.');
+			}
+
+			if (url.indexOf('/') !== -1) {
+				return url.split('/')[0];
+			}
+
+			return url;
+		}
+
 
 	};
 
