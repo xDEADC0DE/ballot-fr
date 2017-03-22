@@ -26,6 +26,8 @@ vocabulaire
 	spoiler effect
 		"émiettement des voix" (http://www.votedevaleur.org/co/votedevaleur.html)
 		"la dispersion des suffrages et des propositions" (François Bayrou, 22 fev. 2017)
+		"partage des voix" (traduction de Boris) pas assez péjoratif
+		"vol de voix" ?
 
 	spoil the election
 		??
@@ -147,6 +149,9 @@ Exemples à trouver
 
 	Méthode condorcet :
 		parler du choix du nom de la région "Occitanie" ?
+		Le vote populaire pour le nom de la nouvelle région issue de la fusion Languedoc Roussillon et Midi-Pyrénées
+		(lien mort ? -_-) https://lenomdemaregion.fr/pages/comment-%C3%A7a-marche
+			archive sur wikipédia : http://archive.wikiwix.com/cache/?url=https%3A%2F%2Flenomdemaregion.fr%2Fpages%2Fcomment-%25C3%25A7a-marche
 
 
 fautes dans la version anglaise (^^;)
@@ -173,9 +178,13 @@ bugs
 
 TODO à la fin
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
-	revoir typographie; guillemets françaises, etc.
+	1. passer tout ça dans Antidote
 
-	élagir un peu la largeur du texte ? Français plus large que l'anglais ..
+	2. revoir typographie; guillemets françaises, etc.
+
+	3. mettre l'orthographe inclusive (dans une autre version ?)
+
+	4. élagir un peu la largeur du texte ? Français plus large que l'anglais ..
 
 
 
