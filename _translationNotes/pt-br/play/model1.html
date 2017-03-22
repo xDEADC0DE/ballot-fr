@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>http://www.rafaelviana.com.br/eleicao/play/model1.html</title><link rel="stylesheet" type="text/css" href="model1_fichiers/viewsource.css"></head><body id="viewsource" class="highlight" style="-moz-tab-size: 4" contextmenu="actions"><pre id="line1"><span></span><span class="doctype">&lt;!doctype html&gt;</span><span>
+<span id="line2"></span></span><span>&lt;<span class="start-tag">html</span> <span class="attribute-name">lang</span>="<a class="attribute-value">en</a>"&gt;</span><span>
+<span id="line3"></span></span><span>&lt;<span class="start-tag">head</span>&gt;</span><span>
+<span id="line4"></span>	</span><span>&lt;<span class="start-tag">meta</span> <span class="attribute-name">charset</span>="<a class="attribute-value">utf-8</a>"&gt;</span><span>
+<span id="line5"></span>	</span><span>&lt;<span class="start-tag">link</span> <span class="attribute-name">rel</span>="<a class="attribute-value">stylesheet</a>" <span class="attribute-name">type</span>="<a class="attribute-value">text/css</a>" <span class="attribute-name">href</span>="<a class="attribute-value" href="view-source:http://www.rafaelviana.com.br/eleicao/play/css/model.css">css/model.css</a>"&gt;</span><span>
+<span id="line6"></span></span><span>&lt;/<span class="end-tag">head</span>&gt;</span><span>
+<span id="line7"></span></span><span>&lt;<span class="start-tag">body</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">body</span>&gt;</span><span>
+<span id="line8"></span></span><span>&lt;/<span class="end-tag">html</span>&gt;</span><span>
+<span id="line9"></span>
+<span id="line10"></span></span><span class="error" title="Balise de début isolée «&nbsp;script&nbsp;».">&lt;<span class="start-tag">script</span> <span class="attribute-name">src</span>="<a class="attribute-value" href="view-source:http://www.rafaelviana.com.br/eleicao/play/js/helpers.js">js/helpers.js</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line11"></span></span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">src</span>="<a class="attribute-value" href="view-source:http://www.rafaelviana.com.br/eleicao/play/js/minpubsub.js">js/minpubsub.js</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line12"></span></span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">src</span>="<a class="attribute-value" href="view-source:http://www.rafaelviana.com.br/eleicao/play/js/Loader.js">js/Loader.js</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line13"></span></span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">src</span>="<a class="attribute-value" href="view-source:http://www.rafaelviana.com.br/eleicao/play/js/Mouse.js">js/Mouse.js</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line14"></span></span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">src</span>="<a class="attribute-value" href="view-source:http://www.rafaelviana.com.br/eleicao/play/js/Draggable.js">js/Draggable.js</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line15"></span></span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">src</span>="<a class="attribute-value" href="view-source:http://www.rafaelviana.com.br/eleicao/play/js/Model.js">js/Model.js</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line16"></span></span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">src</span>="<a class="attribute-value" href="view-source:http://www.rafaelviana.com.br/eleicao/play/js/Candidate.js">js/Candidate.js</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line17"></span></span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">src</span>="<a class="attribute-value" href="view-source:http://www.rafaelviana.com.br/eleicao/play/js/Voters.js">js/Voters.js</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line18"></span></span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">src</span>="<a class="attribute-value" href="view-source:http://www.rafaelviana.com.br/eleicao/play/js/Election.js">js/Election.js</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line19"></span>
+<span id="line20"></span></span><span>&lt;<span class="start-tag">script</span>&gt;</span><span>
+<span id="line21"></span>
+<span id="line22"></span>var us2br = function(winner) {
+<span id="line23"></span>	ppl = {"square": "retângulo", "pentagon": "pentágono", "bob": "bob", "triangle": "triângulo", "hexagon": "hexágono"};
+<span id="line24"></span>	console.log(winner);
+<span id="line25"></span>	return ppl[winner];
+<span id="line26"></span>}
+<span id="line27"></span>
+<span id="line28"></span>Loader.onload = function(){
+<span id="line29"></span>
+<span id="line30"></span>	// SELF CONTAINED MODEL
+<span id="line31"></span>	window.model = new Model({border:2});
+<span id="line32"></span>	document.body.appendChild(model.dom);
+<span id="line33"></span>	model.onInit = function(){
+<span id="line34"></span>		model.addVoters({
+<span id="line35"></span>			dist: SingleVoter,
+<span id="line36"></span>			type: PluralityVoter,
+<span id="line37"></span>			x:125, y:200
+<span id="line38"></span>		});
+<span id="line39"></span>		model.addCandidate("square", 50, 125);
+<span id="line40"></span>		model.addCandidate("triangle", 250, 125);
+<span id="line41"></span>	};
+<span id="line42"></span>	model.onUpdate = function(){
+<span id="line43"></span>		var id = model.voters[0].ballot.vote;
+<span id="line44"></span>		var color = Candidate.graphics[id].fill;
+<span id="line45"></span>		var text = "VOTOS EM </span><span>&lt;b</span><span> style='color:"+color+"'&gt;"+us2br(id).toUpperCase()+"</span><span>&lt;/<span></span>b</span><span>&gt;";
+<span id="line46"></span>		model.caption.innerHTML = text;
+<span id="line47"></span>	};
+<span id="line48"></span>
+<span id="line49"></span>	// Init!
+<span id="line50"></span>	model.init();
+<span id="line51"></span>
+<span id="line52"></span>};
+<span id="line53"></span>Loader.load([
+<span id="line54"></span>	"img/voter_face.png",
+<span id="line55"></span>	"img/square.png",
+<span id="line56"></span>	"img/triangle.png",
+<span id="line57"></span>	"img/hexagon.png"
+<span id="line58"></span>]);
+<span id="line59"></span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span></span></pre><menu type="context" id="actions"><menuitem id="goToLine" label="Aller à la ligne…" accesskey="l"></menuitem><menuitem id="wrapLongLines" label="Retour à la ligne automatique" type="checkbox"></menuitem><menuitem id="highlightSyntax" label="Coloration syntaxique" type="checkbox" checked="true"></menuitem></menu></body></html>
