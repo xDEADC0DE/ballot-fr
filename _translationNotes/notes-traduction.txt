@@ -1,0 +1,194 @@
+
+
+… — ˽ ˽ É Ç À Œ œ ≠ × № → ½ ↔ ✓ ‾ · ≥ ≤ ← ‾
+
+vocabulaire
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+	ballot
+		mode de scrutin
+		!! (dans certains cas) buletin de vote, plutôt ?
+
+	glitch
+		bug ? :/
+
+	Candidat·e·s
+		Steven Square		Camille Carré (Allitération !)
+		Tracy Triangle		Théo Triangle
+		Henry Hexagon		Hichem Hexagone
+		Percival Pentagon
+		Bob					Bob
+
+
+	globalist vs nationalist
+		"mondialiste" = mot d'extreme droite / complotiste :(
+		"libertarisme  contre autoritarisme" (beurk)
+
+	spoiler effect
+		"émiettement des voix" (http://www.votedevaleur.org/co/votedevaleur.html)
+		"la dispersion des suffrages et des propositions" (François Bayrou, 22 fev. 2017)
+
+	spoil the election
+		??
+
+	anti-establishment
+		"anti système"
+
+	grab the nomination, <em>easily</em>
+		??
+
+	so much hoopla
+		tout le brouhaha ?
+
+	trustworthiness
+		fiabilité ? loyauté ? crédibilité ?
+
+	so yeah, no pressure
+		tranquille ? no problemo ?
+
+	Rebuilding trust
+		rétablir la confiance ?
+
+	our “lesser of two evils” problem
+		le problème de "choisir entre deux maux"
+
+	gerrymandering
+		google: "charcutage électoral" :O
+		découpage électoral _tendancieux_ (ne pas perdre l'aspect pejoratif)
+		les circonscriptions électorales
+
+	lack of proportional representation
+		https://fr.wikipedia.org/wiki/Scrutin_proportionnel_plurinominal#Application_au_cas_français
+
+		le manque de représentation proportionnelle
+
+	a piece of paper
+		un bout de papier (bof)
+
+	This idea is <em>not</em> the most important issue.
+		~Cette idée <em>n'est pas</em> le principal problème.
+
+	But as a first step? It'd give us the biggest bang-for-buck.
+		~Mais par rapport à l'effort fourni, c'est là qu'on pourra faire le plus d'améliorations.
+
+	"it's a big if"
+		c'est loin d'être évident ?
+		c'est un gros "si" ?
+		avec des "si", on mettrait Paris en bouteille ?
+
+	“theoretically best” candidate
+		meilleur candidat théorique
+		meilleur candidat en théorie
+		"mathématiquement" ?
+		optimal ?
+
+	nerds
+		nerds ?
+		geeks, encore ?
+		"binoclards" bof.
+
+	"Quadratic Vote Buying" ?
+		Vote quadratique ?
+
+
+Jeux de mots
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+	Triangle's got some sharp points
+	Square understands more sides
+	like how he tackles problems from more angles
+
+	quelque chose avec "obtus" ?
+
+	angle droit / droiture ? / de droite ?
+
+	sommet, angle
+
+	triangle
+		côtés
+		angle aigu
+		polygone
+		figure plane
+		points, sommets
+
+	carré
+		quadrilatère
+		régulier
+		côtés, angles égaux
+		angles droits
+		symétrie ?
+
+
+Questions
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+	balises <meta> :
+		twitter card "creator" : est-ce qu'on peut mettre plusieurs creators ?
+
+
+
+	utiliser l'orthographe inclusive ? (avec des points médians, tant qu'à faire ^^;)
+		élécteur/trice ? :|
+		!! crazy idea: proposer une version avec et une version sans orthographe inclusive ? :O
+
+
+
+
+Exemples à trouver
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+	<p>No, this is not about the 2016 U.S. election. Not <em>just</em> that, anyway.</p>
+
+	in 2000, when Ralph Nader &quot;stole&quot; votes from Al Gore, letting George Bush win
+
+	nomination de Trump pour le GOP
+
+	nomination de Clinton pour les Dem
+
+	liens
+		http://www.nytimes.com/interactive/2016/11/08/us/politics/election-exit-polls.html
+		https://www.theatlantic.com/international/archive/2016/07/trust-institutions-trump-brexit/489554/
+
+	Méthode condorcet :
+		parler du choix du nom de la région "Occitanie" ?
+
+
+fautes dans la version anglaise (^^;)
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+	pas de point ?
+		"nationalist&rdquo;) Let's also"
+		"problems from more angles) Inspired by"
+
+
+	model2.html	majuscules à Triangle et Square ?
+
+	point dans strong/em ?
+		<strong>spoiler effect.</strong>
+		<em>every democracy in the world.</em>
+
+	&mdash; à la place de - (autour de "trustworthiness")
+
+	&hellip; à la place de ...
+
+bugs
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+	le bouton reset ne réaffiche pas les candidats ?
+
+
+TODO à la fin
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+	revoir typographie; guillemets françaises, etc.
+
+	élagir un peu la largeur du texte ? Français plus large que l'anglais ..
+
+
+
+Wiki
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+https://github.com/xDEADC0DE/ballot-fr.wiki.git
+
+	"the Github wiki of a GitHub repo is a git repo in itself (introduced in August 2010).
+	Each wiki is a Git repository, so you're able to push and pull them like anything else.
+	Each wiki respects the same permissions as the source repository.
+	Just add ".wiki" to any repository name in the URL, and you're ready to go."
+	http://stackoverflow.com/a/18760262/113305
+
+
+
+… — ˽ ˽ É Ç À Œ œ ≠ × → ½ ↔ ✓ ‾ · ≥ ≤ ← ‾
