@@ -1,6 +1,10 @@
-![](http://i.imgur.com/8ZzgDiV.png)
+![](https://xdeadc0de.github.io/ballot-fr/social/thumbnail.png)
 
-**TO BUILD A BETTER BALLOT**     
-an interactive guide to alternative voting systems
+**Pour un meilleur scrutin**     
+Un guide interactif des modes de scrutin alternatifs
 
-**[play/read it here](http://ncase.me/ballot)**
+**[à lire/essayer ici](https://xdeadc0de.github.io/ballot-fr/)**
+
+**autres versions**
+* [version originale en anglais, par @ncase](http://ncase.me/ballot)
+* [version en portugais du Brésil](http://www.rafaelviana.com.br/eleicao/)
