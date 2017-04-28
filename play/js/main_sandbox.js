@@ -432,7 +432,7 @@ function main(config){
 
 		// Put it in the save link box!
 
-		var link = "http://"+getDomain(window.location.href, true)+"/sandbox?m="+uri;
+		var link = "http://"+getDomain(window.location.href, true)+"/ballot-fr/sandbox?m="+uri;
 		var savelink = document.getElementById("savelink");
 		savelink.value = "sauvegarde...";
 		setTimeout(function(){
