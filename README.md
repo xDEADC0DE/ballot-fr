@@ -3,7 +3,7 @@
 **Pour un meilleur scrutin**     
 Un guide interactif des modes de scrutin alternatifs
 
-**[à lire/essayer ici](https://xdeadc0de.github.io/ballot-fr/)**
+**[à lire/essayer ici](https://pour-un-meilleur-scrutin.fr)**
 
 **autres versions**
 * [version originale en anglais, par @ncase](http://ncase.me/ballot)
