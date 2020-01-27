@@ -40,6 +40,9 @@ a:hover{ color: hsl(240,80%,80%); }
 #content p abbr{
 	cursor: help;
 }
+abbr[title] {
+	text-underline-position: under;
+}
 iframe{
 	border:none;
 	display: block;
